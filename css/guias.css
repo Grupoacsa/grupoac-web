@@ -111,7 +111,7 @@ a{color:inherit}
 
 /* PIE */
 footer{background:var(--navy);color:#B9BBC8;font-size:14px}
-.pie{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding-block:48px 32px}
+.pie{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;padding-block:48px 32px}
 .pie-tit{font-family:var(--f-titulo);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--celeste);margin:0 0 14px}
 .pie-marca{display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start}
 .pie-marca img{width:56px;height:auto}
