@@ -88,7 +88,7 @@ a{color:inherit}
 .hero-card p{font-size:14px;color:#CFCFD8}
 .hero-card ol{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:14px}
 .hero-card li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;font-size:15px}
-.hero-card li b{display:grid;place-items:center;width:34px;height:34px;background:var(--azul);clip-path:var(--oct);font-family:var(--f-titulo);font-size:14px}
+.hero-card li .b{display:grid;place-items:center;width:34px;height:34px;background:var(--azul);clip-path:var(--oct);font-family:var(--f-titulo);font-size:14px}
 @media (max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-block:56px 64px}.hero::before{background:rgba(13,14,30,.86)}}
 
 /* FRANJA DATOS */
@@ -232,7 +232,7 @@ form .btn{grid-column:1/-1;justify-content:center}
 .pasos .wrap{display:grid;grid-template-columns:auto repeat(3,1fr);gap:28px;align-items:center;padding-block:26px}
 .pasos h3{font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--azul)}
 .paso{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:center;font-size:15px}
-.paso b{display:grid;place-items:center;width:38px;height:38px;background:var(--azul);color:var(--hueso);clip-path:var(--oct);font-family:var(--f-titulo)}
+.paso .b{display:grid;place-items:center;width:38px;height:38px;background:var(--azul);color:var(--hueso);clip-path:var(--oct);font-family:var(--f-titulo)}
 @media (max-width:860px){.pasos .wrap{grid-template-columns:1fr}}
 
 /* coberturas con foto y hover */
@@ -286,7 +286,7 @@ form .btn{grid-column:1/-1;justify-content:center}
 .banda-aseg .aseguradoras{margin:0;padding:0;border:0}
 .pasos3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .pasos3 .paso{display:grid;grid-template-columns:none;gap:12px;align-content:start;padding:28px;border:1px solid var(--linea);border-radius:14px;background:#fff}
-.pasos3 .paso b{width:46px;height:46px;font-size:18px}
+.pasos3 .paso .b{width:46px;height:46px;font-size:18px}
 .pasos3 h3{font-size:20px;font-weight:700}
 .pasos3 p{color:var(--texto-suave);font-size:15px}
 @media (max-width:860px){.pasos3{grid-template-columns:1fr}}
@@ -316,7 +316,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
 .pie .pie-tit{font-family:var(--f-titulo);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--celeste);margin:0 0 14px}
 .pie-marca{display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start}
 .isotipo{width:56px;height:auto;display:block}
-.pie-marca b{display:block;color:var(--hueso);font-family:var(--f-titulo);font-size:17px;margin-bottom:6px}
+.pie-marca .b{display:block;color:var(--hueso);font-family:var(--f-titulo);font-size:17px;margin-bottom:6px}
 .pie ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .pie a{color:var(--hueso);text-decoration:none}
 .pie a:hover{color:var(--celeste);text-decoration:underline}
@@ -384,6 +384,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
 .links-card a{margin-top:0}
 .seguro .links-card a.mas{font-weight:600;color:var(--texto-suave);text-decoration:underline;text-underline-offset:3px}
 .seguro h3.t-card{font-size:20px;font-weight:700;margin:0}
+.b{font-weight:700}
 </style>
 <link rel="stylesheet" href="/css/menu.css">
 </head>
@@ -402,7 +403,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
       <li><a href="/guias/">Guías</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
-    <div class="acciones"><a class="btn btn-wa btn-sm" href="https://wa.me/5491157694024" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>WhatsApp</span></a><button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal"><span></span></button></div>
+    <div class="acciones"><a class="btn btn-wa btn-sm" href="https://api.whatsapp.com/send?phone=5491157694024" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>WhatsApp</span></a><button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal"><span></span></button></div>
   </div>
 </nav>
 
@@ -414,7 +415,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
       <h1 class="eslogan"><span class="uno">Seguros a tu medida</span><em>para personas y pymes.</em></h1>
       <p class="lead">Comparamos 11 aseguradoras y te asesoramos por WhatsApp, en todo el país. Cotizás, consultás y resolvés tus siniestros con un asesor que conoce tu caso.</p>
       <div class="ctas">
-        <a class="btn btn-wa btn-lg" href="https://wa.me/5491157694024" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>Escribinos por WhatsApp</span></a>
+        <a class="btn btn-wa btn-lg" href="https://api.whatsapp.com/send?phone=5491157694024" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>Escribinos por WhatsApp</span></a>
         <a class="btn btn-ghost btn-lg" href="#seguros">Ver coberturas</a>
       </div>
       <div class="stats"><div><strong>Desde 1985</strong><span>en seguros</span></div><div><strong>+10 años</strong><span>como Grupo AC SA</span></div><div><strong>11</strong><span>aseguradoras</span></div><div><strong>24 h</strong><span>de respuesta</span></div></div>
@@ -424,7 +425,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
       <img class="oct-foto f2" src="img/seguro-de-hogar.jpg" alt="Seguro de hogar" width="84" height="84">
       <img class="oct-foto f3" src="img/seguro-integral-de-comercio.jpg" alt="Seguro integral de comercio" width="100" height="100">
       <div class="tel">
-        <div class="tel-top"><img src="img/alejandro-carra-avatar.jpg" alt="Alejandro Carrá, productor asesor de seguros" width="64" height="64"><div><b>Grupo AC</b><small>en línea</small></div></div>
+        <div class="tel-top"><img src="img/alejandro-carra-avatar.jpg" alt="Alejandro Carrá, productor asesor de seguros" width="64" height="64"><div><span class="b">Grupo AC</span><small>en línea</small></div></div>
         <div class="chat">
           <div class="msg in">Hola! Me chocaron de atrás en Córdoba 😩 ¿Qué hago?<time>10:02</time></div>
           <div class="msg out">Tranquila, Laura. Mandame fotos del auto y los datos del otro conductor.<time>10:03</time></div>
@@ -461,36 +462,36 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
         <div class="ico"><img src="img/seguro-de-auto.jpg" alt="Seguro de auto" width="200" height="200" loading="lazy"></div>
         <h4>Auto</h4>
         <p>Desde responsabilidad civil hasta todo riesgo, con auxilio mecánico y gestión de siniestros.</p>
-        <a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20cotizar%20el%20seguro%20de%20mi%20auto." target="_blank" rel="noopener">Cotizar auto →</a>
+        <a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20cotizar%20el%20seguro%20de%20mi%20auto." target="_blank" rel="noopener">Cotizar auto →</a>
       </article>
       <article class="seguro">
         <div class="ico"><img src="img/seguro-de-moto.jpg" alt="Seguro de moto" width="200" height="200" loading="lazy"></div>
         <h4>Moto</h4>
         <p>Cobertura para tu moto, desde la básica obligatoria hasta robo, incendio y daños.</p>
-        <a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20cotizar%20el%20seguro%20de%20mi%20moto." target="_blank" rel="noopener">Cotizar moto →</a>
+        <a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20cotizar%20el%20seguro%20de%20mi%20moto." target="_blank" rel="noopener">Cotizar moto →</a>
       </article>
       <article class="seguro">
         <div class="ico"><img src="img/seguro-de-hogar.jpg" alt="Seguro de hogar" width="200" height="200" loading="lazy"></div>
         <h4>Hogar</h4>
         <p>Incendio, robo y daños por agua para tu casa o departamento, seas dueño o inquilino.</p>
-        <a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20cotizar%20el%20seguro%20de%20mi%20hogar." target="_blank" rel="noopener">Cotizar hogar →</a>
+        <a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20cotizar%20el%20seguro%20de%20mi%20hogar." target="_blank" rel="noopener">Cotizar hogar →</a>
       </article>
       <article class="seguro">
         <div class="ico"><img src="img/seguro-de-vida.jpg" alt="Seguro de vida" width="200" height="200" loading="lazy"></div>
         <h4>Vida</h4>
         <p>Respaldo económico para tu familia si a vos te pasa algo.</p>
-        <a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20consultar%20por%20un%20seguro%20de%20vida." target="_blank" rel="noopener">Consultar →</a>
+        <a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20consultar%20por%20un%20seguro%20de%20vida." target="_blank" rel="noopener">Consultar →</a>
       </article>
       <article class="seguro">
         <div class="ico"><img src="img/seguro-de-accidentes-personales.jpg" alt="Seguro de accidentes personales" width="200" height="200" loading="lazy"></div>
         <h4>Accidentes personales</h4>
         <p>Te cubre ante un accidente, en el trabajo, en un viaje o en tu tiempo libre.</p>
-        <a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20consultar%20por%20accidentes%20personales." target="_blank" rel="noopener">Consultar →</a>
+        <a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20consultar%20por%20accidentes%20personales." target="_blank" rel="noopener">Consultar →</a>
       </article>
       <article class="seguro mas">
         <p class="mas-tit">¿Buscás otra cobertura?</p>
         <p>Contanos qué querés proteger y lo analizamos con vos.</p>
-        <a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20consultar%20por%20otra%20cobertura." target="_blank" rel="noopener">Escribinos →</a>
+        <a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20consultar%20por%20otra%20cobertura." target="_blank" rel="noopener">Escribinos →</a>
       </article>
       </div>
     </div>
@@ -501,37 +502,37 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
         <div class="ico"><img src="img/art-para-empresas.jpg" alt="ART para empresas" width="200" height="200" loading="lazy"></div>
         <h4>ART</h4>
         <p>Aseguradora de riesgos del trabajo: obligatoria por ley y clave para cuidar a tu equipo.</p>
-        <a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20cotizar%20ART%20para%20mi%20empresa." target="_blank" rel="noopener">Consultar →</a>
+        <a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20cotizar%20ART%20para%20mi%20empresa." target="_blank" rel="noopener">Consultar →</a>
       </article>
       <article class="seguro">
         <div class="ico"><img src="img/seguro-integral-de-comercio.jpg" alt="Seguro integral de comercio" width="200" height="200" loading="lazy"></div>
         <h4>Integral de comercio</h4>
         <p>Incendio, robo, cristales y responsabilidad civil de tu local en una sola póliza.</p>
-        <a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20cotizar%20un%20integral%20de%20comercio." target="_blank" rel="noopener">Consultar →</a>
+        <a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20cotizar%20un%20integral%20de%20comercio." target="_blank" rel="noopener">Consultar →</a>
       </article>
       <article class="seguro">
         <div class="ico"><img src="img/seguro-de-flotas.jpg" alt="Seguro de flotas" width="200" height="200" loading="lazy"></div>
         <h4>Flotas</h4>
         <p>Autos, camiones y equipos de tu empresa bajo una sola gestión, con atención prioritaria en siniestros.</p>
-        <a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20cotizar%20el%20seguro%20de%20una%20flota." target="_blank" rel="noopener">Consultar →</a>
+        <a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20cotizar%20el%20seguro%20de%20una%20flota." target="_blank" rel="noopener">Consultar →</a>
       </article>
       <article class="seguro">
         <div class="ico"><img src="img/seguro-de-responsabilidad-civil.jpg" alt="Seguro de responsabilidad civil" width="200" height="200" loading="lazy"></div>
         <h4>Responsabilidad civil</h4>
         <p>Mala praxis, profesionales, colegios, obras y hechos privados. Te protege si tu actividad le causa un daño a un tercero.</p>
-        <div class="links-card"><a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20cotizar%20responsabilidad%20civil." target="_blank" rel="noopener">Cotizar →</a><a class="mas" href="/seguro-de-responsabilidad-civil/">Ver más</a></div>
+        <div class="links-card"><a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20cotizar%20responsabilidad%20civil." target="_blank" rel="noopener">Cotizar →</a><a class="mas" href="/seguro-de-responsabilidad-civil/">Seguros de RC</a></div>
       </article>
       <article class="seguro">
         <div class="ico"><img src="img/seguro-de-caucion.jpg" alt="Seguro de caución" width="200" height="200" loading="lazy"></div>
         <h4>Cauciones</h4>
         <p>Garantías para licitaciones, contratos, alquileres y aduana, sin inmovilizar tu capital.</p>
-        <div class="links-card"><a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20cotizar%20una%20cauci%C3%B3n." target="_blank" rel="noopener">Cotizar →</a><a class="mas" href="/guias/seguro-de-caucion-para-alquilar/">Caución para alquilar</a></div>
+        <div class="links-card"><a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20cotizar%20una%20cauci%C3%B3n." target="_blank" rel="noopener">Cotizar →</a><a class="mas" href="/guias/seguro-de-caucion-para-alquilar/">Caución para alquilar</a></div>
       </article>
       <article class="seguro">
         <div class="ico"><img src="img/seguro-tecnico.jpg" alt="Seguro técnico" width="200" height="200" loading="lazy"></div>
         <h4>Seguro técnico</h4>
         <p>Equipos electrónicos, maquinaria y herramientas, ante roturas, robo o daños.</p>
-        <a href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20cotizar%20un%20seguro%20t%C3%A9cnico." target="_blank" rel="noopener">Consultar →</a>
+        <a href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20cotizar%20un%20seguro%20t%C3%A9cnico." target="_blank" rel="noopener">Consultar →</a>
       </article>
       </div>
     </div>
@@ -587,11 +588,11 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
   <div class="wrap">
     <div class="head"><span class="eyebrow">Cómo trabajamos</span><h2>Cómo cotizar tu seguro en tres pasos</h2></div>
     <div class="pasos3">
-      <div class="paso"><b>1</b><h3>Nos escribís</h3><p>Por WhatsApp o por el formulario, nos contás qué querés proteger.</p></div>
-      <div class="paso"><b>2</b><h3>Comparamos</h3><p>Analizamos tu caso, comparamos las opciones y te explicamos las diferencias en palabras simples.</p></div>
-      <div class="paso"><b>3</b><h3>Te acompañamos</h3><p>Elegís, y estamos con vos durante toda la póliza y, sobre todo, en el siniestro.</p></div>
+      <div class="paso"><span class="b">1</span><h3>Nos escribís</h3><p>Por WhatsApp o por el formulario, nos contás qué querés proteger.</p></div>
+      <div class="paso"><span class="b">2</span><h3>Comparamos</h3><p>Analizamos tu caso, comparamos las opciones y te explicamos las diferencias en palabras simples.</p></div>
+      <div class="paso"><span class="b">3</span><h3>Te acompañamos</h3><p>Elegís, y estamos con vos durante toda la póliza y, sobre todo, en el siniestro.</p></div>
     </div>
-    <a class="btn btn-wa btn-lg" style="margin-top:36px" href="https://wa.me/5491157694024?text=Hola%2C%20quiero%20cotizar%20un%20seguro." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>Empezá ahora por WhatsApp</span></a>
+    <a class="btn btn-wa btn-lg" style="margin-top:36px" href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20quiero%20cotizar%20un%20seguro." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>Empezá ahora por WhatsApp</span></a>
   </div>
 </section>
 <section class="block" id="clientes">
@@ -604,19 +605,19 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
     <div class="testis">
       <figure class="testi" style="margin:0">
         <blockquote>“Un sábado, al salir de casa para ir a trabajar, encontré roto el vidrio de la puerta trasera izquierda. Con el viento frío de El Bolsón, no podía usar el auto. Llamé a Alejandro y enseguida se puso a buscar el cristal. Como no se conseguía en el momento, habló con un cristalero para que me pusiera un acrílico provisorio y me protegiera del frío. A los 3 días llegó el repuesto, impecable.”</blockquote>
-        <figcaption class="quien"><div class="av">CK</div><div><b>Catalina K.</b><br><span>Auto</span><br><span>El Bolsón, Río Negro</span></div></figcaption>
+        <figcaption class="quien"><div class="av">CK</div><div><span class="b">Catalina K.</span><br><span>Auto</span><br><span>El Bolsón, Río Negro</span></div></figcaption>
       </figure>
       <figure class="testi" style="margin:0">
         <blockquote>“El año pasado se rompió un caño del edificio y se dañaron mis tres fotocopiadoras: dos no tuvieron arreglo y la tercera había que repararla. Las necesitaba con urgencia. Gracias a las gestiones de Grupo AC, la averiada estuvo reparada en 48 horas y las dos nuevas llegaron a los 10 días.”</blockquote>
-        <figcaption class="quien"><div class="av">GC</div><div><b>Gabriela C.</b><br><span>Comercio · Integral de comercio y seguro técnico</span><br><span>CABA</span></div></figcaption>
+        <figcaption class="quien"><div class="av">GC</div><div><span class="b">Gabriela C.</span><br><span>Comercio · Integral de comercio y seguro técnico</span><br><span>CABA</span></div></figcaption>
       </figure>
       <figure class="testi" style="margin:0">
         <blockquote>“Toda la flota de camiones y equipos de mi empresa está asegurada con Grupo AC. Tuvimos siniestros y la respuesta fue inmediata. Un respaldo excelente.”</blockquote>
-        <figcaption class="quien"><div class="av">JO</div><div><b>Julio O.</b><br><span>Transporte y logística · Flota de camiones y equipos</span><br><span>Ingeniero Luiggi, La Pampa</span></div></figcaption>
+        <figcaption class="quien"><div class="av">JO</div><div><span class="b">Julio O.</span><br><span>Transporte y logística · Flota de camiones y equipos</span><br><span>Ingeniero Luiggi, La Pampa</span></div></figcaption>
       </figure>
       <figure class="testi" style="margin:0">
         <blockquote>“Hace más de 10 años que confío en Grupo AC para asesorarme en seguros de caución, ART y responsabilidad civil. Siempre me responden enseguida y emiten las pólizas con mucha agilidad.”</blockquote>
-        <figcaption class="quien"><div class="av">MS</div><div><b>Martha S.</b><br><span>Contadora pública · Caución, ART y Responsabilidad Civil</span><br><span>Los Polvorines, Buenos Aires</span></div></figcaption>
+        <figcaption class="quien"><div class="av">MS</div><div><span class="b">Martha S.</span><br><span>Contadora pública · Caución, ART y Responsabilidad Civil</span><br><span>Los Polvorines, Buenos Aires</span></div></figcaption>
       </figure>
     </div>
     
@@ -650,7 +651,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
       <details class="faq" open><summary><h3>¿Qué hace un broker o productor asesor de seguros?</h3></summary><div class="resp"><p>Es un profesional habilitado por la Superintendencia de Seguros de la Nación (SSN) para intermediar entre los asegurados y las compañías de seguros. Te da asesoramiento profesional: analiza qué necesitás cubrir, compara coberturas, aseguradoras y precios, y te recomienda la opción que mejor se ajusta a tu caso. Después te sigue acompañando durante la vigencia de la póliza y si tenés un siniestro.</p></div></details>
       <details class="faq"><summary><h3>¿Es más caro contratar el seguro con un productor asesor?</h3></summary><div class="resp"><p>No. No le cobramos nada al asegurado: vos pagás solo el precio de la póliza y la aseguradora nos paga una comisión. El asesoramiento no tiene costo extra para vos.</p></div></details>
       <details class="faq"><summary><h3>¿Por qué no usar un cotizador online?</h3></summary><div class="resp"><p>Un cotizador online es un sistema: con unos pocos datos devuelve un precio estandarizado, igual para todos los casos parecidos. Un productor asesor es un especialista que analiza tu situación: qué uso le das al auto, qué bienes tenés en tu casa o a qué riesgos está expuesta tu empresa. Con eso compara coberturas y aseguradoras, y te explica qué cubre cada opción, qué no cubre y cuánto pagarías de tu bolsillo si tenés un siniestro. El sistema te da un precio; nosotros te damos una recomendación.</p></div></details>
-      <details class="faq"><summary><h3>¿Qué datos necesito para pedir una cotización?</h3></summary><div class="resp"><ul><li><b>Tus datos:</b> nombre y apellido o razón social, DNI o CUIT, condición frente al IVA y domicilio.</li><li><b>Para un auto o una moto:</b> marca, modelo, año y uso (particular o comercial).</li><li><b>Para una casa o un comercio:</b> dirección, metros cuadrados y qué querés cubrir.</li></ul><p>Si ya tenés una póliza, mandanos una copia y partimos de ahí.</p></div></details>
+      <details class="faq"><summary><h3>¿Qué datos necesito para pedir una cotización?</h3></summary><div class="resp"><ul><li><span class="b">Tus datos:</span> nombre y apellido o razón social, DNI o CUIT, condición frente al IVA y domicilio.</li><li><span class="b">Para un auto o una moto:</span> marca, modelo, año y uso (particular o comercial).</li><li><span class="b">Para una casa o un comercio:</span> dirección, metros cuadrados y qué querés cubrir.</li></ul><p>Si ya tenés una póliza, mandanos una copia y partimos de ahí.</p></div></details>
       <details class="faq"><summary><h3>¿Qué hago si tengo un siniestro?</h3></summary><div class="resp"><p>Avisanos lo antes posible: por ley tenés 3 días para denunciarlo a la aseguradora. Nosotros armamos la denuncia y la documentación con vos y hacemos el seguimiento con la compañía. La aseguradora tiene 30 días para aceptar o rechazar el reclamo desde que tiene toda la información, y 15 días para pagar una vez fijado el monto.</p><p class="fuente">Fuente: Ley de Seguros 17.418 y <a href="https://www.argentina.gob.ar/superintendencia-de-seguros/portal-ciudadano/preguntas-frecuentes/automotor" target="_blank" rel="noopener">SSN</a>.</p></div></details>
     </div>
   </div>
@@ -664,11 +665,11 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
       <h2 style="margin-top:12px">Pedí tu cotización. Te respondemos en 24 h.</h2>
       <p class="lead">Escribinos por WhatsApp o completá el formulario. Sin compromiso.</p>
       <div class="canales">
-        <div class="canal"><small>WhatsApp</small><div><a href="https://wa.me/5491157694024" target="_blank" rel="noopener">+54 9 11 5769-4024</a></div></div>
+        <div class="canal"><small>WhatsApp</small><div><a href="https://api.whatsapp.com/send?phone=5491157694024" target="_blank" rel="noopener">+54 9 11 5769-4024</a></div></div>
         <div class="canal"><small>Email</small><div><a href="mailto:info@grupoac.com.ar">info@grupoac.com.ar</a></div></div>
         <div class="canal"><small>Oficina operativa</small><div><a href="https://www.google.com/maps/search/?api=1&query=Manuel+Rodr%C3%ADguez+Fragio+175%2C+Ituzaing%C3%B3%2C+Buenos+Aires" target="_blank" rel="noopener">Manuel Rodríguez Fragio 175, PB 3<br>Edificio Los Naranjos, Ituzaingó</a> · Lunes a viernes de 9 a 17 h</div></div>
       </div>
-      <a class="btn wa" href="https://wa.me/5491157694024" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>Escribinos por WhatsApp</span></a>
+      <a class="btn wa" href="https://api.whatsapp.com/send?phone=5491157694024" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>Escribinos por WhatsApp</span></a>
     </div>
     <form id="cotizar" novalidate>
       <h3>Quiero cotizar</h3>
@@ -678,18 +679,18 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
         <select id="tipo" name="tipo"><optgroup label="Personas"><option>Auto</option><option>Moto</option><option>Hogar</option><option>Vida</option><option>Accidentes personales</option></optgroup><optgroup label="Pymes"><option>ART</option><option>Integral de comercio</option><option>Flotas</option><option>Responsabilidad civil</option><option>Cauciones</option><option>Seguro técnico</option></optgroup><option>Otro</option></select></div>
       <div class="campo full"><label for="msg">Contanos un poco más (opcional)</label><textarea id="msg" name="msg" placeholder="Ej.: Toyota Etios 2019, uso particular, Córdoba"></textarea></div>
       <button class="btn btn-wa" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>Enviar por WhatsApp</span></button>
-      <p class="form-legal">Al enviar aceptás nuestra <a href="privacidad.html">política de privacidad</a>.</p>
+      <p class="form-legal">Al enviar aceptás nuestra <a href="/privacidad/">política de privacidad</a>.</p>
     </form>
   </div>
 </section>
 
-<a class="wa-float" href="https://wa.me/5491157694024" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>¿Hablamos?</span></a>
+<a class="wa-float" href="https://api.whatsapp.com/send?phone=5491157694024" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>¿Hablamos?</span></a>
 <footer>
   <div class="wrap pie">
     <div class="pie-marca">
       <img class="isotipo" src="img/isotipo-hueso.png" alt="Isotipo de Grupo AC" width="56" height="54">
       <div>
-        <b>Grupo AC SA</b>
+        <span class="b">Grupo AC SA</span>
         <p>Grupo de Asesores en Coberturas SA<br>CUIT 30-71512229-0<br>Sociedad de productores asesores de seguros, matrícula SSN N.º 1324.<br>Presidente: Lic. Alejandro Carrá, matrícula SSN N.º 29641.</p>
       </div>
     </div>
@@ -707,7 +708,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
       <p class="pie-tit">Contacto</p>
       <ul>
         <li><a href="https://www.google.com/maps/search/?api=1&query=Manuel+Rodr%C3%ADguez+Fragio+175%2C+Ituzaing%C3%B3%2C+Buenos+Aires" target="_blank" rel="noopener">Manuel Rodríguez Fragio 175, PB 3<br>Edificio Los Naranjos<br>Ituzaingó, Provincia de Buenos Aires</a></li>
-        <li>Tel. y WhatsApp: <a href="https://wa.me/5491157694024" target="_blank" rel="noopener">+54 9 11 5769-4024</a></li>
+        <li>Tel. y WhatsApp: <a href="https://api.whatsapp.com/send?phone=5491157694024" target="_blank" rel="noopener">+54 9 11 5769-4024</a></li>
         <li><a href="mailto:info@grupoac.com.ar">info@grupoac.com.ar</a></li>
       </ul>
     </div>
@@ -727,7 +728,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
       </div>
     </div>
   </div>
-  <div class="wrap legal"><span>© 2026 Grupo de Asesores en Coberturas SA. Todos los derechos reservados.</span><span><a href="privacidad.html">Política de privacidad</a> · <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank" rel="noopener">Defensa de las y los consumidores. Para reclamos ingrese aquí</a></span></div>
+  <div class="wrap legal"><span>© 2026 Grupo de Asesores en Coberturas SA. Todos los derechos reservados.</span><span><a href="/privacidad/">Política de privacidad</a> · <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank" rel="noopener">Defensa de las y los consumidores. Para reclamos ingrese aquí</a></span></div>
 </footer>
 
 <script>
@@ -737,7 +738,7 @@ document.getElementById('cotizar').addEventListener('submit',function(e){
   if(!n.value.trim()){n.focus();return}
   var t='Hola, soy '+n.value.trim()+'. Quiero cotizar: '+document.getElementById('tipo').value+'.';
   var m=document.getElementById('msg').value.trim(); if(m) t+=' '+m;
-  window.open('https://wa.me/5491157694024?text='+encodeURIComponent(t),'_blank','noopener');
+  window.open('https://api.whatsapp.com/send?phone=5491157694024&amp;text='+encodeURIComponent(t),'_blank','noopener');
 });
 document.querySelectorAll('.tabs button').forEach(function(b){
   b.addEventListener('click',function(){
