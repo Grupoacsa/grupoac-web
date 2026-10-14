@@ -153,3 +153,15 @@ dialog.nos-pop::backdrop{background:rgba(13,14,30,.6);backdrop-filter:blur(3px)}
 .nos-pop .pie-pop a.link{color:var(--azul);font-weight:600;font-size:14px}
 .autor .ver-nos{margin-top:8px;background:none;border:0;padding:0;color:var(--azul);font:inherit;font-weight:700;cursor:pointer;text-decoration:underline}
 @media (max-width:480px){.nos-pop .cab{grid-template-columns:64px 1fr;padding:20px 52px 20px 18px}.nos-pop .cab img{width:64px;height:64px}.nos-pop .cab h2{font-size:18px}.nos-pop .cuerpo{padding:18px}}
+dialog.montos-pop{max-width:720px}
+.montos-pop .cab{grid-template-columns:1fr}
+.montos-pop .tabla{margin:0}
+.montos-pop .tabla table{font-size:14px}
+.montos-pop .vigencia{margin:0}
+.montos-pop .cuerpo,.montos-pop .montos-cont{min-width:0;overflow-wrap:anywhere}
+.montos-pop .tabla{overflow-x:auto;max-width:100%}
+.montos-pop .tabla table{min-width:0;width:100%}
+@media (max-width:560px){.montos-pop .tabla th:nth-child(3),.montos-pop .tabla td:nth-child(3){display:none}.montos-pop .tabla th,.montos-pop .tabla td{padding:10px 8px}}
+.montos-pop .tabla td:last-child{white-space:nowrap;overflow-wrap:normal}
+@media (max-width:560px){.montos-pop .tabla table{font-size:13px}}
+.montos-pop .tabla th,.montos-pop .tabla td{overflow-wrap:normal;word-break:normal}
