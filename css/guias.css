@@ -132,3 +132,24 @@ footer{background:var(--navy);color:#B9BBC8;font-size:14px}
 @media (max-width:520px){.pie{grid-template-columns:1fr}}
 .red{display:inline-flex;align-items:center;gap:10px}
 .red svg{width:20px;height:20px;flex:none;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* Ventana "Quiénes somos" en las páginas especializadas */
+dialog.nos-pop{border:0;padding:0;border-radius:14px;max-width:560px;width:calc(100% - 32px);max-height:calc(100dvh - 32px);background:var(--hueso);color:var(--navy);box-shadow:0 30px 80px -20px rgba(13,14,30,.6)}
+dialog.nos-pop::backdrop{background:rgba(13,14,30,.6);backdrop-filter:blur(3px)}
+.nos-pop .cab{display:grid;grid-template-columns:96px 1fr;gap:18px;align-items:center;background:var(--navy);color:var(--hueso);padding:24px 56px 24px 24px}
+.nos-pop .cab img{width:96px;height:96px;border-radius:50%;object-fit:cover;object-position:40% 25%;border:3px solid var(--celeste)}
+.nos-pop .cab .eyebrow{color:var(--celeste);display:block;margin-bottom:4px}
+.nos-pop .cab h2{font-family:var(--f-titulo);font-size:22px;line-height:1.2;margin:0}
+.nos-pop .cerrar{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(148,165,212,.5);background:transparent;color:var(--hueso);font-size:22px;line-height:1;cursor:pointer}
+.nos-pop .cuerpo{padding:22px 24px 26px;display:grid;gap:14px;font-size:16px;line-height:1.6}
+.nos-pop .cuerpo p{margin:0}
+.nos-pop .datos-pop{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center}
+.nos-pop .datos-pop div{background:#fff;border:1px solid var(--linea);border-radius:8px;padding:10px 6px;font-size:13px;line-height:1.3}
+.nos-pop .datos-pop b{display:block;font-family:var(--f-titulo);font-size:20px;color:var(--azul)}
+.nos-pop blockquote{margin:0;border-left:3px solid var(--azul);padding:2px 0 2px 14px;font-size:15px}
+.nos-pop blockquote small{display:block;margin-top:4px;color:#3C3F55}
+.nos-pop .mat{font-size:13px;color:#3C3F55}
+.nos-pop .pie-pop{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.nos-pop .pie-pop a.link{color:var(--azul);font-weight:600;font-size:14px}
+.autor .ver-nos{margin-top:8px;background:none;border:0;padding:0;color:var(--azul);font:inherit;font-weight:700;cursor:pointer;text-decoration:underline}
+@media (max-width:480px){.nos-pop .cab{grid-template-columns:64px 1fr;padding:20px 52px 20px 18px}.nos-pop .cab img{width:64px;height:64px}.nos-pop .cab h2{font-size:18px}.nos-pop .cuerpo{padding:18px}}
