@@ -1,0 +1,17 @@
+# Direcciones de la web anterior → páginas nuevas (301 = mudanza permanente, conserva el posicionamiento)
+/inicio                    /                                          301
+/inicio/                   /                                          301
+/index.php                 /                                          301
+/home                      /                                          301
+/conocenos                 /                                          301
+/nosotros                  /                                          301
+/quienes-somos             /                                          301
+/cotiza-ya                 /                                          301
+/cotiza                    /                                          301
+/cotizar                   /                                          301
+/contacto                  /                                          301
+/servicios                 /                                          301
+/seguros                   /                                          301
+/caucion                   /guias/seguro-de-caucion-para-alquilar/    301
+/seguro-de-caucion         /guias/seguro-de-caucion-para-alquilar/    301
+/responsabilidad-civil     /seguro-de-responsabilidad-civil/          301
