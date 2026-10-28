@@ -20,3 +20,4 @@
 .nav .btn-cotiza{background:var(--azul,#2B4798);color:#fff;border:1px solid var(--azul,#2B4798);font-weight:700;text-decoration:none;white-space:nowrap}
 .nav .btn-cotiza:hover{background:#3656B0;border-color:#3656B0;color:#fff}
 @media (max-width:560px){.nav .acciones{gap:6px}.nav .btn-cotiza{padding:10px 12px;font-size:14px;line-height:1.2}.nav .wrap{gap:8px}.nav .wrap>a:first-child{flex:0 1 auto;min-width:96px}.nav .wrap>a:first-child img{width:100%;max-width:130px;height:auto}}
+@media (min-width:1241px) and (max-width:1480px){.nav .btn-wa.btn-sm span{display:none}.nav .btn-wa.btn-sm{padding:10px}.nav .acciones{gap:8px}}
