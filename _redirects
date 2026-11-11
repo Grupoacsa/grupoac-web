@@ -6,9 +6,9 @@
 /conocenos                 /                                          301
 /nosotros                  /                                          301
 /quienes-somos             /                                          301
-/cotiza-ya                 /                                          301
-/cotiza                    /                                          301
-/cotizar                   /                                          301
+/cotiza-ya                 /#contacto                                 301
+/cotiza                    /#contacto                                 301
+/cotizar                   /#contacto                                 301
 /contacto                  /                                          301
 /servicios                 /                                          301
 /seguros                   /                                          301
@@ -16,3 +16,14 @@
 /seguro-de-caucion         /guias/seguro-de-caucion-para-alquilar/    301
 /responsabilidad-civil     /seguro-de-responsabilidad-civil/          301
 /privacidad.html           /privacidad/                               301
+
+# Direcciones viejas que Google seguía visitando (Search Console, 404 al 11/11/2026)
+/es-ar/conocenos           /                                          301
+/es-ar/cotiza-ya           /#contacto                                 301
+/es-ar/*                   /                                          301
+/integral-de-consorcio     /seguro-de-responsabilidad-civil/          301
+/resolucion_p_domestico.htm /                                         301
+/Protecom.pdf              /                                          301
+/productos                 /#seguros                                  301
+/fronttienda/*             /                                          301
+/carrito/*                 /                                          301
