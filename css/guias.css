@@ -167,3 +167,8 @@ dialog.montos-pop{max-width:720px}
 .montos-pop .tabla th,.montos-pop .tabla td{overflow-wrap:normal;word-break:normal}
 
 .b{font-weight:700}
+.publicos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:24px 0}
+.publicos article{background:#fff;border:1px solid var(--linea);border-radius:10px;padding:18px 18px 16px;display:flex;flex-direction:column}
+.publicos h3{margin:0 0 6px;font-size:18px}
+.publicos p{margin:0 0 12px;font-size:15px;line-height:1.5;flex:1}
+.publicos a{font-weight:600}
