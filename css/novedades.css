@@ -85,3 +85,4 @@
 .n-mas{grid-column:1/-1;justify-self:center;font:700 15px var(--f-titulo);color:var(--azul);background:#fff;border:2px solid var(--azul);border-radius:999px;padding:12px 26px;cursor:pointer}
 .n-mas:hover{background:var(--azul);color:var(--hueso)}
 .n-mas[hidden]{display:none}
+.n-card.dest .vin{display:none}
