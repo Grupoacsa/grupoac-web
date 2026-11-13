@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Seguro de comercio">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3A5BC0"/><stop offset=".55" stop-color="#2B4798"/><stop offset="1" stop-color="#16204A"/></linearGradient>
+ <radialGradient id="b" cx=".3" cy=".25" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+ <pattern id="p" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#94A5D4" opacity=".25"/></pattern>
+ <clipPath id="c"><polygon points="58,0 142,0 200,58 200,142 142,200 58,200 0,142 0,58"/></clipPath>
+</defs>
+<polygon points="58,0 142,0 200,58 200,142 142,200 58,200 0,142 0,58" fill="url(#g)"/>
+<g clip-path="url(#c)"><rect width="200" height="200" fill="url(#p)"/><circle cx="168" cy="30" r="64" fill="#94A5D4" opacity=".18"/><rect width="200" height="200" fill="url(#b)"/></g>
+<g>
+  <rect x="44" y="92" width="112" height="66" rx="6" fill="#FFFDF1"/>
+  <path d="M36 70l14-28h100l14 28z" fill="#94A5D4"/>
+  <path d="M36 70h128v8a16 16 0 0 1-32 0 16 16 0 0 1-32 0 16 16 0 0 1-32 0 16 16 0 0 1-32 0z" fill="#FFFDF1"/>
+  <g fill="#2B4798"><path d="M68 70h32v8a16 16 0 0 1-32 0zM132 70h32v8a16 16 0 0 1-32 0z"/></g>
+  <rect x="62" y="110" width="34" height="48" rx="3" fill="#2B4798"/><rect x="108" y="110" width="34" height="26" rx="3" fill="#2B4798"/></g>
+<polygon points="58,0 142,0 200,58 200,142 142,200 58,200 0,142 0,58" fill="none" stroke="#FFFDF1" stroke-opacity=".35" stroke-width="3"/>
+</svg>
