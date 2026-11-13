@@ -82,3 +82,6 @@
 .n-cta .t{font-family:var(--f-titulo);font-weight:800;font-size:clamp(22px,3vw,28px);margin:0}
 .n-cta p{margin:0 0 6px;color:#DCE1F2}
 .n-fuente{font-size:13px;color:var(--texto-suave);border-top:1px solid var(--linea);padding-top:16px;margin-top:36px}
+.n-mas{grid-column:1/-1;justify-self:center;font:700 15px var(--f-titulo);color:var(--azul);background:#fff;border:2px solid var(--azul);border-radius:999px;padding:12px 26px;cursor:pointer}
+.n-mas:hover{background:var(--azul);color:var(--hueso)}
+.n-mas[hidden]{display:none}

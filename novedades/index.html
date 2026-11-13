@@ -65,9 +65,12 @@ gtag('config', 'G-Q8FT83J79P');
   <img class="vin" src="/img/novedades/riesgo-auto.svg" alt="" width="88" height="88">
   <span class="arriba"><span class="r">Seguro de auto</span><time datetime="2026-11-13">13 nov. 2026</time></span>
   <h2>Seguro de auto: suben un 30 % los montos de responsabilidad civil desde 2027</h2><p>Resolución SSN 480/2026: nuevos límites para autos, motos, camiones y colectivos.</p><span class="mas">Leer la nota →</span></span></a>
-<script>(function(){var b=document.querySelectorAll('.n-filtros button'),c=document.querySelectorAll('.n-card');
-b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.classList.toggle('on',y===x);});var f=x.dataset.f;
-c.forEach(function(k){k.hidden=!(f==='todos'||k.dataset.riesgo===f);});});});})();</script>
+
+<script>(function(){var N=9,f='todos',lim=N,b=document.querySelectorAll('.n-filtros button'),c=[].slice.call(document.querySelectorAll('.n-card')),mas=document.querySelector('.n-mas');
+function pintar(){var v=c.filter(function(k){return f==='todos'||k.dataset.riesgo===f;});c.forEach(function(k){k.hidden=true;});
+v.forEach(function(k,i){k.hidden=i>=lim;});if(mas)mas.hidden=v.length<=lim;}
+b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.classList.toggle('on',y===x);});f=x.dataset.f;lim=N;pintar();});});
+if(mas)mas.addEventListener('click',function(){lim+=N;pintar();});pintar();})();</script>
 </main>
 
 <dialog class="nos-pop" id="quienes-somos" aria-labelledby="nos-pop-tit">
