@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url><loc>https://grupoac.com.ar/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://grupoac.com.ar/guias/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://grupoac.com.ar/guias/seguro-de-caucion-para-alquilar/</loc><lastmod>2026-11-13</lastmod></url>
@@ -14,4 +14,9 @@
   <url><loc>https://grupoac.com.ar/guias/seguro-de-hogar/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://grupoac.com.ar/seguros-de-retiro/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://grupoac.com.ar/seguro-de-accidentes-personales/</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://grupoac.com.ar/seguro-para-oficios/</loc><lastmod>2026-11-17</lastmod><image:image><image:loc>https://grupoac.com.ar/img/oficios/seguro-para-oficios-silletero-trabajo-en-altura-1600.webp</image:loc></image:image><image:image><image:loc>https://grupoac.com.ar/img/oficios/seguro-para-oficios-contratistas-en-empresa-1600.webp</image:loc></image:image><image:image><image:loc>https://grupoac.com.ar/img/oficios/seguro-para-oficios-trabajos-en-casa-1600.webp</image:loc></image:image></url>
+  <url><loc>https://grupoac.com.ar/seguro-para-electricistas/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://grupoac.com.ar/seguro-para-gasistas-y-plomeros/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://grupoac.com.ar/seguro-para-tecnicos-de-aire-acondicionado/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://grupoac.com.ar/seguro-para-jardineros/</loc><lastmod>2026-11-17</lastmod></url>
 </urlset>
