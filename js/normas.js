@@ -59,7 +59,7 @@
     }
   };
 
-  var css = '.norma{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline dotted;text-underline-offset:3px;cursor:pointer}' +
+  var css = '.norma{background:none;border:0;padding:0;font:inherit;color:inherit;text-align:inherit;text-decoration:underline dotted;text-underline-offset:3px;cursor:pointer}' +
     '.norma::after{content:" \\2139";font-size:.8em;opacity:.6}' +
     '.norma-pop{max-width:520px;width:calc(100% - 32px);border:0;border-radius:14px;padding:26px 24px 22px;box-shadow:0 20px 60px rgba(0,0,0,.35);font-family:inherit;color:#14162b}' +
     '.norma-pop::backdrop{background:rgba(10,12,30,.55)}' +

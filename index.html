@@ -763,7 +763,7 @@ document.getElementById('cotizar').addEventListener('submit',function(e){
   if(!n.value.trim()){n.focus();return}
   var t='Hola, soy '+n.value.trim()+'. Vengo de la web y quiero cotizar: '+document.getElementById('tipo').value+'.';
   var m=document.getElementById('msg').value.trim(); if(m) t+=' '+m;
-  window.open('https://api.whatsapp.com/send?phone=5491157694024&amp;text='+encodeURIComponent(t),'_blank','noopener');
+  window.open('https://api.whatsapp.com/send?phone=5491157694024&text='+encodeURIComponent(t),'_blank','noopener');
 });
 document.querySelectorAll('.tabs button').forEach(function(b){
   b.addEventListener('click',function(){
