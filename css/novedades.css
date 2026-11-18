@@ -86,3 +86,14 @@
 .n-mas:hover{background:var(--azul);color:var(--hueso)}
 .n-mas[hidden]{display:none}
 .n-card.dest .vin{display:none}
+.n-resumen{max-width:740px;margin:18px auto 0;font-size:17px;line-height:1.65;color:var(--texto-suave);border-left:4px solid var(--azul);padding:4px 0 4px 16px}
+.n-tabla table{width:100%;border-collapse:collapse;font-size:15px}
+.n-tabla caption.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.n-tabla th,.n-tabla td{padding:14px 18px;text-align:left;border-top:1px solid var(--linea);font-weight:400}
+.n-tabla thead th{background:var(--navy);color:var(--hueso);font-family:var(--f-titulo);font-weight:700;font-size:14px;border-top:0}
+.n-tabla thead th.nuevo{color:var(--celeste)}
+.n-tabla tbody th{font-weight:400}
+.n-tabla tbody td:nth-child(2){color:var(--texto-suave);text-decoration:line-through;text-decoration-color:rgba(60,63,85,.4);width:96px}
+.n-tabla tbody td.nuevo{font-family:var(--f-titulo);font-weight:800;font-size:18px;color:var(--azul);width:110px}
+.n-tabla tbody tr:hover{background:var(--hueso-2)}
+@media (max-width:520px){.n-tabla th,.n-tabla td{padding:12px 10px;font-size:14px}.n-tabla tbody td.nuevo{font-size:16px}}
