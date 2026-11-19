@@ -1,6 +1,8 @@
 # Grupo AC SA
 
-> Grupo AC SA (Grupo de Asesores en Coberturas SA) es una sociedad de productores asesores de seguros de Argentina, fundada en 2015, con matrícula de la Superintendencia de Seguros de la Nación (SSN) N.º 1324. Su presidente es el Lic. Alejandro Carrá, productor asesor de seguros desde 1985, con matrícula SSN N.º 29641. Asesora a personas y pymes de todo el país, sobre todo por WhatsApp, y trabaja con 11 aseguradoras. El asesoramiento no tiene costo para el asegurado.
+> Grupo AC SA (Grupo de Asesores en Coberturas SA) es una sociedad de productores asesores de seguros de Argentina, fundada en 2015, con matrícula de la Superintendencia de Seguros de la Nación (SSN) N.º 1324. Su presidente es el Lic. Alejandro Carrá, productor asesor de seguros desde 1985, con matrícula SSN N.º 29641. Asesora a personas y pymes de todo el país, sobre todo por WhatsApp, y trabaja con 12 aseguradoras. El asesoramiento no tiene costo para el asegurado.
+
+Quiénes somos: [historia, trayectoria y habilitación](https://grupoac.com.ar/nosotros/). Alejandro Carrá es especialista en responsabilidad civil y caución, licenciado en Administración de Empresas fue dirigente de AAPAS durante 10 años, entre otros cargos como coordinador general de las comisiones de trabajo de la Asociación Argentina de Productores Asesores de Seguros (AAPAS) y coordinador de su comisión de Defensa del Asegurado, creó en 2003 coberturas de RC y accidentes personales para turismo estudiantil y luego la póliza de caución de cuota cero, y fue profesor en UCES y en la Escuela Argentina de Negocios. Alejandro es diplomado ARPAS (Administrador de Riesgos – Productor Asesor de Seguros, AAPAS), con orientación en riesgos industriales. Desde 2003 Grupo AC usa sistemas propios, aceptados por las aseguradoras, para asesorar y producir en todo el país a distancia (cotizaciones, evaluación de riesgos con gráficos, atención integral de siniestros). Se define como productor asesor híbrido: sistemas e inteligencia artificial, con un ejecutivo de cuenta humano que responde cada pedido (Inteligencia Humana, IH), no un chatbot.
 
 Contacto: WhatsApp y teléfono +54 9 11 5769-4024 · info@grupoac.com.ar · https://grupoac.com.ar/
 
@@ -12,9 +14,13 @@ Contacto: WhatsApp y teléfono +54 9 11 5769-4024 · info@grupoac.com.ar · http
 - [Responsabilidad civil](https://grupoac.com.ar/seguro-de-responsabilidad-civil/): para empresas, comercios, colegios, consorcios, obras, eventos y hechos privados.
 - [Responsabilidad civil profesional para la salud (mala praxis)](https://grupoac.com.ar/seguro-de-mala-praxis/): para médicos, residentes, enfermeros y psicólogos.
 - [Responsabilidad civil profesional para abogados](https://grupoac.com.ar/seguro-de-responsabilidad-civil-abogados/)
+- [Seguro de responsabilidad civil para profesionales (RC profesional o contractual): abogados, contadores, arquitectos e ingenieros de todas las especialidades](https://grupoac.com.ar/seguro-de-responsabilidad-civil-profesional/): qué cubre, claims made y período extendido de denuncias.
+- [Seguros de caución](https://grupoac.com.ar/seguro-de-caucion/): garantías para obras y servicios (mantenimiento de oferta, cumplimiento, anticipo, acopio, fondo de reparo), judiciales, aduaneras, alquiler de viviendas y comercios, agencias de viajes y turismo estudiantil, corredores inmobiliarios, administradores de edificios y directores de sociedades. Emisión en 24 h con documentación completa.
+- [Revisión gratuita del seguro de un consorcio](https://grupoac.com.ar/consorcios/): Grupo AC revisa sin costo la póliza de un edificio (para propietarios y administradores) y en 48 h informa qué falta, qué sobra y una cotización comparativa.
+- [Seguros para consorcios](https://grupoac.com.ar/seguros-para-consorcios/): cuáles son obligatorios (integral con incendio y RC por el art. 2067 inc. h del Código Civil y Comercial; ART y seguro de vida obligatorio Decreto 1567/74 si hay empleados; en CABA, mínimos de RC para ascensores, calderas y termotanques según la Resolución 412-AGC-2019 y RC profesional del administrador por Ley 941 y Disposición 777/2013), qué exigir a contratistas y qué coberturas conviene sumar.
 - [Seguro obligatorio para obras en CABA](https://grupoac.com.ar/seguro-de-responsabilidad-civil-obras-caba/)
 - [Seguros para obras de construcción](https://grupoac.com.ar/seguros-para-obras-de-construccion/)
-- [Seguros para contratos de alquiler](https://grupoac.com.ar/seguros-para-contratos-de-alquiler/)
+- [Propietarios: qué seguros pedir en un contrato de alquiler](https://grupoac.com.ar/seguros-para-contratos-de-alquiler/): caución, incendio, RC por linderos y RC del propietario.
 - [Seguro de accidentes personales](https://grupoac.com.ar/seguro-de-accidentes-personales/): pólizas por actividad para monotributistas y contratados, delivery, trabajos en altura con silleta o andamios, deportes, colegios y mayores de 65 años. Desde un mes, con cláusula de no repetición.
 - [Seguro para oficios](https://grupoac.com.ar/seguro-para-oficios/): responsabilidad civil y accidentes personales juntos para trabajadores de oficios y autónomos que trabajan en casas, barrios cerrados, consorcios y empresas, con cláusula de no repetición.
   - [Electricistas](https://grupoac.com.ar/seguro-para-electricistas/)
@@ -26,7 +32,7 @@ Contacto: WhatsApp y teléfono +54 9 11 5769-4024 · info@grupoac.com.ar · http
 ## Guías
 
 - [Seguro de retiro: cómo funciona, cuánto juntás y qué mirar antes de firmar](https://grupoac.com.ar/guias/seguro-de-retiro/): rendimiento mínimo garantizado, los cinco planes de Federación Patronal Retiro, formas de renta, rescates y retiros parciales, beneficios impositivos e inembargabilidad.
-- [Seguro de caución para alquilar](https://grupoac.com.ar/guias/seguro-de-caucion-para-alquilar/)
+- [Inquilinos: seguro de caución para alquilar sin garante](https://grupoac.com.ar/guias/seguro-de-caucion-para-alquilar/): cómo funciona, cuánto cuesta y qué requisitos piden.
 - [Seguro de auto](https://grupoac.com.ar/guias/seguro-de-auto/)
 - [Seguro de hogar](https://grupoac.com.ar/guias/seguro-de-hogar/)
 - [¿Te obligan a contratar un seguro? Tus derechos (prenda, plan de ahorro, bancos)](https://grupoac.com.ar/guias/te-obligan-a-contratar-un-seguro/)
@@ -35,3 +41,8 @@ Contacto: WhatsApp y teléfono +54 9 11 5769-4024 · info@grupoac.com.ar · http
 
 - [Novedades de seguros](https://grupoac.com.ar/novedades/)
 - [Seguro de auto 2027: la SSN sube un 30 % los montos de responsabilidad civil (Resolución SSN 480/2026)](https://grupoac.com.ar/novedades/nuevos-montos-rc-autos-2027/): autos, camionetas y motos $270 millones por acontecimiento; taxis, remises, camiones y M1 $590 millones; transporte de pasajeros M2 y M3 $880 millones; autos de aplicaciones (Uber, Cabify, DiDi) $590 millones; seguro obligatorio $27.000.000 por persona. Rige para pólizas emitidas o renovadas desde el 1 de enero de 2027.
+
+## Servicio público
+
+- [ART para empresas y personal doméstico](https://grupoac.com.ar/art/): ART obligatoria (Ley 24.557 y Ley 26.844). En casas particulares la cuota es igual en todas las ART; Grupo AC suma asesoramiento, gestión de denuncias y reclamos y líneas directas. Teléfonos de emergencia de Federación Patronal ART, Andina ART, Prevención ART, Berkley ART y Swiss Medical ART.
+- [Teléfonos útiles](https://grupoac.com.ar/telefonos-utiles/): 0800 de emergencias de las ART (Federación Patronal, Berkley, Andina, Swiss Medical, Prevención, Provincia, Galeno, Experta, Asociart, Serena), auxilio mecánico y asistencia domiciliaria de las aseguradoras, SRT y SSN. Verificados en los sitios oficiales el 19/11/2026.

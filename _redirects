@@ -3,23 +3,21 @@
 /inicio/                   /                                          301
 /index.php                 /                                          301
 /home                      /                                          301
-/conocenos                 /                                          301
-/nosotros                  /                                          301
-/quienes-somos             /                                          301
+/conocenos                 /nosotros/                                 301
+/quienes-somos             /nosotros/                                 301
 /cotiza-ya                 /#contacto                                 301
 /cotiza                    /#contacto                                 301
 /cotizar                   /#contacto                                 301
 /contacto                  /                                          301
 /servicios                 /                                          301
 /seguros                   /                                          301
-/caucion                   /guias/seguro-de-caucion-para-alquilar/    301
-/seguro-de-caucion         /guias/seguro-de-caucion-para-alquilar/    301
+/caucion                   /seguro-de-caucion/                        301
 /responsabilidad-civil     /seguro-de-responsabilidad-civil/          301
 /privacidad.html           /privacidad/                               301
 
 # Direcciones viejas que Google seguía visitando (Search Console, 404 y "rastreada sin indexar" al 17/11/2026)
 # Van antes de /es-ar/* porque gana la primera regla que coincide.
-/es-ar/caucion             /guias/seguro-de-caucion-para-alquilar/    301
+/es-ar/caucion             /seguro-de-caucion/                        301
 /es-ar/seguros-para-motos  /#seguros                                  301
 /es-ar/seguro-sepelio      /#seguros                                  301
 /seguro-del-automotor      /guias/seguro-de-auto/                     301
@@ -28,10 +26,12 @@
 /legislacion-y-normativas  /guias/                                    301
 
 # Direcciones viejas que Google seguía visitando (Search Console, 404 al 11/11/2026)
-/es-ar/conocenos           /                                          301
+/es-ar/conocenos           /nosotros/                                 301
 /es-ar/cotiza-ya           /#contacto                                 301
 /es-ar/*                   /                                          301
-/integral-de-consorcio     /#seguros                                  301
+/consorcio                /consorcios/                               301
+/integral-de-consorcio     /seguros-para-consorcios/                  301
+/seguro-integral-de-consorcio /seguros-para-consorcios/               301
 /resolucion_p_domestico.htm /#art                                     301
 /Protecom.pdf              /                                          301
 /productos                 /#seguros                                  301

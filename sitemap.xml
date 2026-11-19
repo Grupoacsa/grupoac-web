@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url><loc>https://grupoac.com.ar/</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://grupoac.com.ar/nosotros/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://grupoac.com.ar/guias/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://grupoac.com.ar/guias/seguro-de-caucion-para-alquilar/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://grupoac.com.ar/guias/seguro-de-retiro/</loc><lastmod>2026-11-18</lastmod></url>
@@ -24,4 +25,10 @@
   <url><loc>https://grupoac.com.ar/asesor-de-seguros-por-whatsapp/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://grupoac.com.ar/novedades/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://grupoac.com.ar/novedades/nuevos-montos-rc-autos-2027/</loc><lastmod>2026-11-18</lastmod><image:image><image:loc>https://grupoac.com.ar/img/novedades/nuevos-montos-rc-autos-2027.webp</image:loc></image:image></url>
+  <url><loc>https://grupoac.com.ar/seguro-de-caucion/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://grupoac.com.ar/seguro-de-responsabilidad-civil-profesional/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://grupoac.com.ar/seguros-para-consorcios/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://grupoac.com.ar/consorcios/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://grupoac.com.ar/art/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://grupoac.com.ar/telefonos-utiles/</loc><lastmod>2026-11-19</lastmod></url>
 </urlset>
