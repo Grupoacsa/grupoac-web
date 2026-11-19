@@ -35,11 +35,15 @@ Contacto: WhatsApp y teléfono +54 9 11 5769-4024 · info@grupoac.com.ar · http
 - [Inquilinos: seguro de caución para alquilar sin garante](https://grupoac.com.ar/guias/seguro-de-caucion-para-alquilar/): cómo funciona, cuánto cuesta y qué requisitos piden.
 - [Seguro de auto](https://grupoac.com.ar/guias/seguro-de-auto/)
 - [Seguro de hogar](https://grupoac.com.ar/guias/seguro-de-hogar/)
-- [Seguro de moto: coberturas, robo y montos 2027](https://grupoac.com.ar/guias/seguro-de-moto/): responsabilidad civil obligatoria (Ley 24.449, art. 68), $270 millones por acontecimiento desde 2027 (Resolución SSN 480/2026), robo e incendio, todo riesgo y uso para delivery.
+- [Seguro de moto, eléctricas y delivery](https://grupoac.com.ar/guias/seguro-de-moto/): responsabilidad civil obligatoria (Ley 24.449, art. 68), $270 millones por acontecimiento desde 2027 (Resolución SSN 480/2026), robo e incendio, todo riesgo, obligación de declarar el uso para delivery y seguros para motos, monopatines y bicis eléctricas.
 - [Seguro de vida: tipos, cuánto asegurar y qué mirar](https://grupoac.com.ar/guias/seguro-de-vida/): vida obligatorio del Decreto 1567/74 ($2.071.300 desde marzo de 2026), vida por convenio, colectivo para empresas, individual y con ahorro.
 - [Seguro integral de comercio: qué cubre y qué no](https://grupoac.com.ar/guias/seguro-integral-de-comercio/): incendio, robo, valores, cristales, RC, daños por agua, equipos y pérdida de beneficio; exclusiones y regla proporcional (art. 65, Ley 17.418).
 - [Seguros obligatorios para empleadores por convenio colectivo](https://grupoac.com.ar/guias/seguros-obligatorios-por-convenio-colectivo/): ART, vida obligatorio, CCT 130/75 art. 97 (comercio), CCT 389/04 art. 23 (gastronómicos), CCT 589/10 (encargados de edificio), UOCRA, UOM y efectos de la Ley 27.802.
 - [¿Te obligan a contratar un seguro? Tus derechos (prenda, plan de ahorro, bancos)](https://grupoac.com.ar/guias/te-obligan-a-contratar-un-seguro/)
+
+## Formularios
+
+- [Cotizar el seguro de vida de los empleados](https://grupoac.com.ar/cotizar-seguro-de-vida-empleados/): formulario para que el empleador cargue los datos de la empresa y la nómina (nombre, CUIL, convenio, sueldo y fecha de ingreso) o suba su Excel.
 
 ## Novedades
 
