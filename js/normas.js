@@ -2,6 +2,32 @@
    Uso: <button type="button" class="norma" data-norma="ccyc-2067">art. 2067 del Código Civil y Comercial</button> */
 (function () {
   var N = {
+    'lct-75': {
+      t: 'Ley de Contrato de Trabajo 20.744, art. 75 (deber de seguridad)',
+      r: 'El empleador debe hacer observar las pautas y limitaciones a la duración del trabajo y las normas de higiene y seguridad, y responde por los daños que sufra el trabajador por no cumplirlas. Rige para el consorcio como empleador del encargado y demás personal.',
+      u: 'https://www.argentina.gob.ar/normativa/nacional/ley-20744-25552/actualizacion'
+    },
+    'lct-248': {
+      t: 'Ley de Contrato de Trabajo 20.744, art. 248 (texto según Ley 27.802)',
+      r: 'Si el trabajador fallece, el empleador debe pagar a sus causahabientes una indemnización. Es independiente de lo que paguen la ART, el seguro de vida obligatorio u otros beneficios. Por eso muchos empleadores contratan un seguro de vida colectivo que cubra esa indemnización.',
+      u: 'https://www.argentina.gob.ar/normativa/nacional/norma-423680/texto'
+    },
+    'ley-12981': {
+      t: 'Ley 12.981, Estatuto del personal de casas de renta y propiedad horizontal',
+      r: 'Regula el trabajo de los encargados, ayudantes y demás personal de los edificios: categorías, jornada, vivienda y obligaciones del consorcio como empleador. Se complementa con el convenio colectivo de la actividad y, en lo que no prevé, con la Ley de Contrato de Trabajo.',
+      u: 'https://www.argentina.gob.ar/normativa/nacional/norma-45226/texto'
+    },
+    'ley-24557-3': {
+      t: 'Ley 24.557 de Riesgos del Trabajo, art. 3',
+      r: 'El seguro de riesgos del trabajo es obligatorio para todo empleador con personal en relación de dependencia: debe afiliarse a una ART o, si cumple los requisitos, autoasegurarse. El empleador no afiliado responde directamente por las prestaciones.',
+      u: 'https://www.argentina.gob.ar/normativa/nacional/27971/actualizacion'
+    },
+    'prorrata-pra': {
+      t: 'Incendio a prorrata o a primer riesgo absoluto: ¿cuál conviene?',
+      h: '<p><strong>A prorrata.</strong> Asegurás el valor total del edificio. Si la suma asegurada es menor que el valor real, ante un siniestro parcial la aseguradora paga en proporción. <em>Ejemplo:</em> el edificio vale $1.000 millones y está asegurado por $500 millones (la mitad). Un incendio causa daños por $100 millones: cobrás $50 millones.</p><p><strong>A primer riesgo absoluto.</strong> Asegurás un monto fijo y la aseguradora paga el daño completo hasta ese monto, sin aplicar la proporción. <em>Mismo ejemplo</em> con un primer riesgo de $200 millones: cobrás los $100 millones completos. Cada peso asegurado cuesta más, y si el daño supera el monto, la diferencia corre por tu cuenta.</p><p><strong>¿Cuál conviene?</strong> Para un edificio, lo habitual es asegurar a prorrata por el valor total de reposición, con cláusula de ajuste automático, y sumar un primer riesgo absoluto complementario que cubre lo que falte si la suma quedó atrasada. Te ayudamos a calcular el valor del edificio.</p>',
+      u: 'https://www.argentina.gob.ar/normativa/nacional/ley-17418-39520/actualizacion',
+      ul: 'Ver la Ley de Seguros (art. 65) →'
+    },
     'ccyc-2067': {
       t: 'Código Civil y Comercial de la Nación, art. 2067, inc. h',
       r: 'Entre las obligaciones del administrador del consorcio está mantener asegurado el inmueble con un seguro integral de consorcios que incluya incendio, responsabilidad civil y demás riesgos de práctica, además de los otros riesgos que resuelva la asamblea.',
@@ -60,11 +86,11 @@
   };
 
   var css = '.norma{background:none;border:0;padding:0;font:inherit;color:inherit;text-align:inherit;text-decoration:underline dotted;text-underline-offset:3px;cursor:pointer}' +
-    '.norma::after{content:" \\2139";font-size:.8em;opacity:.6}' +
-    '.norma-pop{max-width:520px;width:calc(100% - 32px);border:0;border-radius:14px;padding:26px 24px 22px;box-shadow:0 20px 60px rgba(0,0,0,.35);font-family:inherit;color:#14162b}' +
+    '.norma::after{content:" \\2139";font-size:.8em;opacity:.6}.norma.nota::after{content:" \\2192"}' +
+    '.norma-pop{max-width:600px;width:calc(100% - 32px);border:0;border-radius:14px;padding:26px 24px 22px;box-shadow:0 20px 60px rgba(0,0,0,.35);font-family:inherit;color:#14162b}' +
     '.norma-pop::backdrop{background:rgba(10,12,30,.55)}' +
     '.norma-pop h3{margin:0 34px 12px 0;font-size:1.1rem;line-height:1.35}' +
-    '.norma-pop p{margin:0 0 16px;line-height:1.6;font-size:.98rem}' +
+    '.norma-pop p{margin:0 0 14px;line-height:1.6;font-size:.98rem}.norma-pop #norma-r{margin-bottom:6px;max-height:60vh;overflow:auto}' +
     '.norma-pop a{font-weight:600;color:#1d3fb8}' +
     '.norma-pop .x{position:absolute;top:12px;right:14px;background:none;border:0;font-size:26px;line-height:1;cursor:pointer;color:#55586b}' +
     '.norma-pop small{display:block;color:#6b6e80;margin-top:14px;font-size:.8rem}';
@@ -73,7 +99,7 @@
   var d = document.createElement('dialog');
   d.className = 'norma-pop';
   d.setAttribute('aria-labelledby', 'norma-t');
-  d.innerHTML = '<button type="button" class="x" aria-label="Cerrar">&times;</button><h3 id="norma-t"></h3><p id="norma-r"></p><a id="norma-u" target="_blank" rel="noopener">Ver el texto oficial &rarr;</a><small>Resumen orientativo elaborado por Grupo AC. Ante cualquier duda, rige el texto oficial.</small>';
+  d.innerHTML = '<button type="button" class="x" aria-label="Cerrar">&times;</button><h3 id="norma-t"></h3><div id="norma-r"></div><a id="norma-u" target="_blank" rel="noopener">Ver el texto oficial &rarr;</a><small>Resumen orientativo elaborado por Grupo AC. Ante cualquier duda, rige el texto oficial.</small>';
   document.body.appendChild(d);
   function cerrar() { if (d.open) d.close(); }
   d.querySelector('.x').addEventListener('click', cerrar);
@@ -86,8 +112,8 @@
     if (!n) return;
     e.preventDefault();
     d.querySelector('#norma-t').textContent = n.t;
-    d.querySelector('#norma-r').textContent = n.r;
-    d.querySelector('#norma-u').href = n.u;
+    var rr=d.querySelector('#norma-r'); if (n.h) { rr.innerHTML = n.h; } else { rr.textContent = n.r; }
+    var uu=d.querySelector('#norma-u'); uu.href = n.u; uu.textContent = n.ul || 'Ver el texto oficial \u2192';
     if (d.showModal) d.showModal(); else window.open(n.u, '_blank');
   });
 })();
