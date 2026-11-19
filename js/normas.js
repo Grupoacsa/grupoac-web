@@ -17,6 +17,11 @@
       r: 'Regula el trabajo de los encargados, ayudantes y demás personal de los edificios: categorías, jornada, vivienda y obligaciones del consorcio como empleador. Se complementa con el convenio colectivo de la actividad y, en lo que no prevé, con la Ley de Contrato de Trabajo.',
       u: 'https://www.argentina.gob.ar/normativa/nacional/norma-45226/texto'
     },
+    'ley-26844-74': {
+      t: 'Ley 26.844 de Casas Particulares, arts. 14.1 inc. e) y 74',
+      r: 'El art. 14.1 inc. e) establece la obligación del empleador de contratar a favor del personal un seguro por los riesgos del trabajo. El art. 74 incorpora a las trabajadoras y trabajadores de casas particulares al régimen de las leyes 24.557 y 26.773. El Decreto 467/14 y la Resolución SRT 2224/14 lo reglamentan: el empleador elige libremente la ART y, si paga la cuota sin elegir, la SRT le asigna una de oficio.',
+      u: 'https://www.argentina.gob.ar/normativa/nacional/210489/texto'
+    },
     'ley-24557-3': {
       t: 'Ley 24.557 de Riesgos del Trabajo, art. 3',
       r: 'El seguro de riesgos del trabajo es obligatorio para todo empleador con personal en relación de dependencia: debe afiliarse a una ART o, si cumple los requisitos, autoasegurarse. El empleador no afiliado responde directamente por las prestaciones.',
