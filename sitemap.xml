@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url><loc>https://grupoac.com.ar/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://grupoac.com.ar/nosotros/</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://grupoac.com.ar/guias/</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://grupoac.com.ar/guias/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://grupoac.com.ar/guias/seguro-de-caucion-para-alquilar/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://grupoac.com.ar/guias/seguro-de-retiro/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://grupoac.com.ar/seguro-de-responsabilidad-civil/</loc><lastmod>2026-11-12</lastmod></url>
@@ -15,6 +15,10 @@
   <url><loc>https://grupoac.com.ar/guias/seguro-de-auto/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://grupoac.com.ar/guias/te-obligan-a-contratar-un-seguro/</loc><lastmod>2026-11-18</lastmod><image:image><image:loc>https://grupoac.com.ar/img/guias/te-obligan-a-contratar-un-seguro.webp</image:loc></image:image></url>
   <url><loc>https://grupoac.com.ar/guias/seguro-de-hogar/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://grupoac.com.ar/guias/seguro-de-moto/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://grupoac.com.ar/guias/seguro-de-vida/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://grupoac.com.ar/guias/seguro-integral-de-comercio/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://grupoac.com.ar/guias/seguros-obligatorios-por-convenio-colectivo/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://grupoac.com.ar/seguros-de-retiro/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://grupoac.com.ar/seguro-de-accidentes-personales/</loc><lastmod>2026-11-18</lastmod><image:image><image:loc>https://grupoac.com.ar/img/oficios/seguro-de-accidentes-personales-repartidor-delivery-moto-1600.webp</image:loc><image:title>Seguro de accidentes personales para repartidor de delivery en moto</image:title></image:image><image:image><image:loc>https://grupoac.com.ar/img/oficios/seguro-de-accidentes-personales-trabajo-en-altura-andamio-1600.webp</image:loc><image:title>Seguro de accidentes personales para trabajo en altura en andamio</image:title></image:image></url>
   <url><loc>https://grupoac.com.ar/seguro-para-oficios/</loc><lastmod>2026-11-17</lastmod><image:image><image:loc>https://grupoac.com.ar/img/oficios/seguro-para-oficios-silletero-trabajo-en-altura-1600.webp</image:loc></image:image><image:image><image:loc>https://grupoac.com.ar/img/oficios/seguro-para-oficios-contratistas-en-empresa-1600.webp</image:loc></image:image><image:image><image:loc>https://grupoac.com.ar/img/oficios/seguro-para-oficios-trabajos-en-casa-1600.webp</image:loc></image:image></url>

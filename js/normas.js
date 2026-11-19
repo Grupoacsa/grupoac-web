@@ -2,6 +2,28 @@
    Uso: <button type="button" class="norma" data-norma="ccyc-2067">art. 2067 del Código Civil y Comercial</button> */
 (function () {
   var N = {
+    'ley-24449-68': {
+      t: "Ley de Tránsito 24.449, art. 68 (seguro obligatorio)",
+      r: "Todo automotor, acoplado o semiacoplado debe tener un seguro que cubra los daños causados a terceros, transportados o no. Rige también para las motos. El comprobante del seguro vigente debe llevarse al circular.",
+      u: "https://www.argentina.gob.ar/normativa/nacional/ley-24449-818/actualizacion"
+    },
+    'res-ssn-480-2026': {
+      t: "Resolución SSN 480/2026 (montos de RC de vehículos desde 2027)",
+      r: "Actualiza los límites mínimos del seguro de responsabilidad civil de vehículos para las pólizas emitidas o renovadas desde el 1 de enero de 2027. Autos, camionetas y motos: $270 millones por acontecimiento. Seguro obligatorio: $27 millones por persona.",
+      ul: "Ver nuestra nota con los montos →",
+      u: "https://grupoac.com.ar/novedades/nuevos-montos-rc-autos-2027/"
+    },
+    'cct-130-97': {
+      t: "Convenio Colectivo de Trabajo 130/75 (empleados de comercio), art. 97",
+      r: "Obliga al empleador a contratar un seguro de vida colectivo para todo el personal comprendido en el convenio, sin límite de edad, que cubre muerte e incapacidad total y permanente por un capital equivalente a 12 sueldos iniciales de la categoría Administrativo A. El empleador lo contrata con la aseguradora que elija. Es independiente del seguro de vida obligatorio del Decreto 1567/74 y del seguro de retiro La Estrella.",
+      ul: "Ver un resumen del convenio →",
+      u: "https://www.ignacioonline.com.ar/empleados-de-comercio-seguros/"
+    },
+    'cct-389-23': {
+      t: "Convenio Colectivo de Trabajo 389/04 (gastronómicos y hoteleros), art. 23",
+      r: "Prevé seguros de vida y sepelio para los trabajadores de la actividad. Según los acuerdos paritarios homologados, se financian con un aporte del 1% a cargo del trabajador y una contribución del 1% a cargo del empleador.",
+      u: "https://www.santafe.gov.ar/index.php/web/content/download/69127/335737/file/CCT%20389-04%20Gastron%C3%B3micos%20"
+    },
     'lct-75': {
       t: 'Ley de Contrato de Trabajo 20.744, art. 75 (deber de seguridad)',
       r: 'El empleador debe hacer observar las pautas y limitaciones a la duración del trabajo y las normas de higiene y seguridad, y responde por los daños que sufra el trabajador por no cumplirlas. Rige para el consorcio como empleador del encargado y demás personal.',
