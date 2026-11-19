@@ -48,6 +48,11 @@
       r: 'Todo empleador con trabajadores en relación de dependencia debe afiliarse a una aseguradora de riesgos del trabajo (ART), que cubre los accidentes de trabajo y las enfermedades profesionales.',
       u: 'https://www.argentina.gob.ar/normativa/nacional/27971/actualizacion'
     },
+    'cct-589-27': {
+      t: 'Convenio Colectivo de Trabajo 589/10 (encargados de edificio), arts. 27 y 27 bis',
+      r: 'El sindicato contrata pólizas colectivas que cubren muerte, la indemnización del art. 248 LCT, sueldos por enfermedad o accidente inculpable, desempleo y licencias especiales. El consorcio aporta el 4% del sueldo bruto de cada trabajador y se retiene el 1% a los afiliados. El art. 27 bis suma un seguro de vida entera con ahorro (0,75% del consorcio y 0,75% del trabajador). Los sueldos cubiertos los paga el consorcio y la aseguradora los reintegra dentro de los 30 días.',
+      u: 'https://fateryh.org.ar/convenio-colectivo-589-10/'
+    },
     'dec-1567-74': {
       t: 'Decreto 1567/74, Seguro de Vida Colectivo Obligatorio',
       r: 'Obliga a los empleadores a contratar un seguro de vida para cada trabajador en relación de dependencia. Cubre la muerte por cualquier causa y se paga aparte de cualquier otro beneficio, seguro o indemnización.',
