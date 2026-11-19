@@ -1,0 +1,22 @@
+name: Bajar imagen
+on:
+  push:
+    branches: [claude/bajar-imagen]
+permissions:
+  contents: write
+jobs:
+  bajar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          set -e
+          while IFS='|' read -r url dest; do
+            [ -z "$url" ] && continue
+            mkdir -p "$(dirname "$dest")"
+            curl -fsSL "$url" -o "$dest"
+            ls -la "$dest"
+          done < bajar.txt
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add -A img; git rm -q --cached bajar.txt || true
+          git commit -m "Imágenes descargadas" && git push
