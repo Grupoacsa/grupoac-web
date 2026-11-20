@@ -172,3 +172,7 @@ dialog.montos-pop{max-width:720px}
 .publicos h3{margin:0 0 6px;font-size:18px}
 .publicos p{margin:0 0 12px;font-size:15px;line-height:1.5;flex:1}
 .publicos a{font-weight:600}
+
+.tabla.compacta table{min-width:0;table-layout:fixed}
+.tabla.compacta th,.tabla.compacta td{overflow-wrap:break-word}
+@media (max-width:560px){.tabla.compacta table{font-size:13.5px}.tabla.compacta th,.tabla.compacta td{padding:9px 8px}.tabla.compacta tbody th{width:30%}}
