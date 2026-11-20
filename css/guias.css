@@ -236,4 +236,5 @@ dialog.montos-pop{max-width:720px}
   .fg-atajo{flex-direction:column;align-items:stretch;text-align:center}
   .fg-atajo .btns{justify-content:center}
 }
+.fg-atajo a.ir.wa{background:#25D366;color:#06281A}
 .fg-atajo a.ir.sec{background:#fff;color:var(--azul);border:1.5px solid var(--azul)}
