@@ -14,8 +14,8 @@ jobs:
           while IFS='|' read -r url dest; do
             [ -z "$url" ] && continue
             mkdir -p "$(dirname "$dest")"
-            curl -fsSL "$url" -o "$dest"
-            ls -la "$dest"
+            curl -fsSL "$url" -o "$dest" || echo "FALLO $dest"
+            ls -la "$dest" || true
           done < bajar.txt
           git config user.name "github-actions"; git config user.email "actions@github.com"
           git add -A img
