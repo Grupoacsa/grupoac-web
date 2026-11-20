@@ -176,3 +176,63 @@ dialog.montos-pop{max-width:720px}
 .tabla.compacta table{min-width:0;table-layout:fixed}
 .tabla.compacta th,.tabla.compacta td{overflow-wrap:break-word}
 @media (max-width:560px){.tabla.compacta table{font-size:13.5px}.tabla.compacta th,.tabla.compacta td{padding:9px 8px}.tabla.compacta tbody th{width:30%}}
+
+/* ===== Formulario de cotización en guías ===== */
+.fg{margin:40px 0;border-radius:18px;overflow:hidden;display:grid;grid-template-columns:.9fr 1.1fr;background:#fff;box-shadow:0 24px 60px -30px rgba(13,14,30,.45);border:1px solid var(--linea)}
+.fg-lado{background:radial-gradient(90% 80% at 0% 0%,rgba(148,165,212,.35),transparent 60%),linear-gradient(160deg,var(--azul),var(--navy));color:var(--hueso);padding:30px 28px;display:flex;flex-direction:column;gap:14px}
+.fg-lado .eyebrow{color:var(--celeste);letter-spacing:.08em;text-transform:uppercase;font-size:12px;font-weight:600}
+.fg-lado .fg-tit{font-family:var(--f-titulo);font-weight:800;font-size:26px;line-height:1.2;margin:0;color:#fff}
+.fg-lado ul{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:10px;font-size:15px;line-height:1.4}
+.fg-lado li{display:flex;gap:10px;align-items:flex-start}
+.fg-lado li b{color:#fff}
+.fg-lado li::before{content:"✓";flex:0 0 22px;height:22px;border-radius:50%;background:rgba(255,255,255,.16);color:#7CF0A6;font-weight:800;font-size:13px;display:grid;place-items:center;margin-top:1px}
+.fg-firma{margin-top:auto;display:flex;align-items:center;gap:10px;font-size:13px;color:#DCE1F2;padding-top:10px;border-top:1px solid rgba(255,255,255,.15)}
+.fg-firma img{border-radius:50%;width:40px;height:40px;object-fit:cover;border:2px solid rgba(255,255,255,.4)}
+.fg-cuerpo{padding:28px}
+.fg-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fg-campo{display:flex;flex-direction:column;gap:5px}
+.fg-campo.full{grid-column:1/-1}
+.fg-campo label,.fg-campo .lbl{font-size:13px;font-weight:600;color:var(--texto-suave)}
+.fg-campo label small{font-weight:400;opacity:.75}
+.fg-campo input,.fg-campo select,.fg-campo textarea{font:inherit;font-size:16px;color:var(--navy);background:var(--hueso);border:1.5px solid var(--linea);border-radius:10px;padding:11px 13px;width:100%;box-sizing:border-box;transition:border-color .15s,box-shadow .15s,background .15s}
+.fg-campo textarea{min-height:76px;resize:vertical}
+.fg-campo input:focus,.fg-campo select:focus,.fg-campo textarea:focus{outline:0;border-color:var(--azul);background:#fff;box-shadow:0 0 0 4px rgba(43,71,152,.14)}
+.fg-campo.error input,.fg-campo.error select{border-color:#C8372D;box-shadow:0 0 0 4px rgba(200,55,45,.12)}
+.fg-campo .msg{display:none;font-size:12px;color:#C8372D}
+.fg-campo.error .msg{display:block}
+.fg-chips{display:flex;flex-wrap:wrap;gap:8px}
+.fg-chips label{cursor:pointer;position:relative}
+.fg-chips input{position:absolute;opacity:0;pointer-events:none;left:0;top:0;width:1px;height:1px}
+.fg-chips span{display:inline-block;padding:8px 14px;border-radius:999px;border:1.5px solid var(--linea);background:var(--hueso);font-size:14px;font-weight:600;color:var(--texto-suave);transition:all .15s}
+.fg-chips input:checked+span{background:var(--azul);border-color:var(--azul);color:#fff}
+.fg-chips input:focus-visible+span{box-shadow:0 0 0 4px rgba(43,71,152,.2)}
+.fg-enviar{grid-column:1/-1;display:flex;flex-direction:column;gap:8px;margin-top:4px}
+.fg-enviar button{font:inherit;font-family:var(--f-titulo);font-weight:800;font-size:17px;border:0;border-radius:12px;padding:15px 20px;cursor:pointer;color:#fff;background:linear-gradient(135deg,var(--azul),#1D2F6B);box-shadow:0 12px 26px -12px rgba(43,71,152,.8);transition:transform .15s,box-shadow .15s}
+.fg-enviar button:hover{transform:translateY(-1px);box-shadow:0 16px 30px -12px rgba(43,71,152,.9)}
+.fg-enviar button.enviando{opacity:.7;cursor:wait}
+.fg-enviar p{margin:0;font-size:12.5px;color:var(--texto-suave);text-align:center}
+.fg-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.fg-ok{text-align:center;padding:24px 8px;outline:0}
+.fg-ok .ico{width:60px;height:60px;border-radius:50%;background:#E3F8EA;color:#18A04A;display:grid;place-items:center;font-size:30px;margin:0 auto 10px}
+.fg-ok .fg-tit2{font-family:var(--f-titulo);font-weight:800;font-size:22px;margin:0 0 6px}
+.fg-ok p{margin:0 0 14px;color:var(--texto-suave)}
+.fg-ok .fg-wa,.fg-ok .solo-wa{display:none}
+.fg-ok.por-wa .fg-wa{display:inline-flex}
+.fg-ok.por-wa .solo-wa{display:block}
+.fg-ok .fg-tit2.solo-wa{display:none}.fg-ok.por-wa .fg-tit2.solo-wa{display:block}.fg-ok.por-wa .fg-tit2.solo-mail{display:none}
+.fg-ok.por-wa .solo-mail{display:none}
+.fg-atajo{margin:26px 0;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:#fff;border:1px solid var(--linea);border-radius:14px;padding:16px 18px;box-shadow:0 10px 30px -22px rgba(13,14,30,.4)}
+.fg-atajo p{margin:0;font-weight:600;line-height:1.35}
+.fg-atajo p small{display:block;font-weight:400;color:var(--texto-suave);font-size:14px}
+.fg-atajo .btns{display:flex;gap:8px;flex-wrap:wrap}
+.fg-atajo a.ir{display:inline-flex;align-items:center;gap:6px;background:var(--azul);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:10px 18px;font-size:15px}
+@media (max-width:760px){
+  .fg{grid-template-columns:1fr;border-radius:16px}
+  .fg-lado{padding:24px 20px}
+  .fg-lado .fg-tit{font-size:22px}
+  .fg-firma{display:none}
+  .fg-cuerpo{padding:22px 18px}
+  .fg-form{grid-template-columns:1fr}
+  .fg-atajo{flex-direction:column;align-items:stretch;text-align:center}
+  .fg-atajo .btns{justify-content:center}
+}
