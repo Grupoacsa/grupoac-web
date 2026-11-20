@@ -20,12 +20,13 @@
       var txt = 'Hola, vengo de la web y quiero cotizar: ' + (fd.get('riesgo') || 'un seguro') +
         '.\nNombre: ' + fd.get('nombre') + '\nTeléfono: ' + fd.get('telefono') +
         (fd.get('mail') ? '\nMail: ' + fd.get('mail') : '') +
-        (fd.get('localidad') ? '\nLocalidad: ' + fd.get('localidad') : '') +
+        (fd.get('provincia') ? '\nProvincia: ' + fd.get('provincia') : '') +
         (fd.get('contacto') ? '\nPrefiero que me contacten por: ' + fd.get('contacto') : '') +
-        (fd.get('comentario') ? '\n' + fd.get('comentario') : '');
+        (fd.get('comentario') ? '\n' + fd.get('comentario') : '') +
+        '\n(Desde: ' + (fd.get('origen') || location.pathname) + ')';
       var listo = function () {
         f.hidden = true; if (ok) { ok.hidden = false; ok.focus(); }
-        if (window.gtag) gtag('event', 'generate_lead', { form: 'guia', riesgo: fd.get('riesgo') });
+        if (window.gtag) gtag('event', 'generate_lead', { form: 'guia', riesgo: fd.get('riesgo'), origen: location.pathname });
       };
       var aWhatsApp = function () {
         // Sin envío por mail: último paso por WhatsApp (botón que toca la persona, así no lo bloquea el navegador).
