@@ -18,5 +18,5 @@ jobs:
             ls -la "$dest"
           done < bajar.txt
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add -A img; git rm -q --cached bajar.txt || true
-          git commit -m "Imágenes descargadas" && git push
+          git add -A img
+          git commit -m "Imágenes descargadas [skip ci]" && git push
