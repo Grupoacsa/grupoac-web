@@ -15,7 +15,7 @@ export async function onRequestPost({ request, env }) {
 
   const g = (k, n = 200) => String(fd.get(k) || '').trim().slice(0, n);
   const d = {
-    nombre: g('nombre'), tel: g('telefono'), mail: g('mail'), loc: g('localidad'),
+    nombre: g('nombre'), tel: g('telefono'), mail: g('mail'), loc: g('localidad'), prov: g('provincia'), origen: g('origen', 300),
     riesgo: g('riesgo'), contacto: g('contacto'), com: g('comentario', 2000), pagina: g('pagina', 300),
   };
   if (!d.nombre || !d.tel) return json({ ok: false, error: 'faltan_datos' }, 400);
@@ -24,8 +24,8 @@ export async function onRequestPost({ request, env }) {
   const html = `<div style="font-family:Arial,sans-serif;color:#14162b">
   <h2 style="margin:0 0 8px">Nueva consulta desde la web: ${esc(d.riesgo || 'seguro')}</h2>
   <table cellpadding="5" style="font-size:14px">
-   ${fila('Nombre', d.nombre)}${fila('Teléfono / WhatsApp', d.tel)}${fila('Mail', d.mail)}${fila('Localidad', d.loc)}
-   ${fila('Quiere asegurar', d.riesgo)}${fila('Prefiere que lo contacten por', d.contacto)}${fila('Comentario', d.com)}
+   ${fila('Nombre', d.nombre)}${fila('Teléfono / WhatsApp', d.tel)}${fila('Mail', d.mail)}${fila('Provincia', d.prov)}${fila('Localidad', d.loc)}
+   ${fila('Quiere asegurar', d.riesgo)}${fila('Prefiere que lo contacten por', d.contacto)}${fila('Comentario', d.com)}${fila('Página de origen', d.origen)}
   </table>
   <p style="color:#6b6e80;font-size:12px">Enviado desde ${esc(d.pagina || 'grupoac.com.ar')}</p></div>`;
 
@@ -36,7 +36,7 @@ export async function onRequestPost({ request, env }) {
       from: env.NOMINA_FROM || 'Web Grupo AC <web@grupoac.com.ar>',
       to: [env.NOMINA_TO || 'info@grupoac.com.ar'],
       ...(d.mail ? { reply_to: d.mail } : {}),
-      subject: `Consulta web: ${d.riesgo || 'seguro'} · ${d.nombre}`,
+      subject: `Consulta web: ${d.riesgo || 'seguro'} · ${d.nombre}${d.prov ? ' (' + d.prov + ')' : ''} · desde ${(d.origen.match(/\(([^)]*)\)\s*$/) || [, d.pagina])[1] || 'la web'}`,
       html,
     }),
   });
