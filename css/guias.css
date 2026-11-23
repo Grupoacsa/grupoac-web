@@ -335,3 +335,18 @@ dialog.montos-pop{max-width:720px}
 .cvb-rows .cv{display:flex;flex-direction:row;background:none;border:0;border-bottom:1px dashed var(--linea);border-radius:0;padding:8px 0;gap:10px}
 .cvb-rows .cv[hidden]{display:none}
 .guia .cv-ok{display:flex}
+/* buscador en una línea */
+.cvb{scroll-margin-top:80px}
+.cvb-top{padding:18px 20px}
+.cvb-fila{display:flex;align-items:center;gap:18px}
+.cvb-fila .cvb-tit{margin:0;flex:none;font-size:19px}
+.cvb-fila .cvb-campo{flex:1}
+.cvb-chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-top:12px;padding-bottom:2px}
+.cvb-chips::-webkit-scrollbar{display:none}
+.cvb-chips button{flex:none;white-space:nowrap}
+.cvb-cnt{font-weight:600;color:var(--azul)}
+@media (max-width:760px){.cvb-fila{flex-direction:column;align-items:stretch;gap:10px}.cvb-fila .cvb-tit{font-size:18px}}
+.guia .cvb .cvb-cnt{margin:12px 20px 0}
+.guia .cvb .cv p,.guia .cvb .cv ul{margin:0}
+.guia .cvb .cv-ok{margin-top:4px}
+.cvb-grid[hidden]{display:none}

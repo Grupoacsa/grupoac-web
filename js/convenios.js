@@ -8,9 +8,14 @@ var t;
 function go(){var v=norm(q.value),n=0;var words=v.split(/\s+/).filter(Boolean);
  cards.forEach(function(c){var k=norm(c.getAttribute('data-k'));var ok=!words.length||words.every(function(w){return k.indexOf(w)>-1;});c.hidden=!ok;if(ok)n++;});
  if(mas)mas.hidden=!mas.querySelector('.cv:not([hidden])');
+ grid.hidden=!grid.querySelector('.cv:not([hidden])');
  cnt.textContent=!v?'':(n?n+(n===1?' convenio encontrado':' convenios encontrados'):'Todavía no publicamos ese convenio. Preguntanos y te decimos qué te exige.');
  clearTimeout(t);if(v&&window.gtag)t=setTimeout(function(){gtag('event','buscar_convenio',{termino:v,resultados:n});},1200);}
 q.addEventListener('input',go);
+var box=document.querySelector('.cvb');
+function subir(){var r=box.getBoundingClientRect();if(r.top<60||r.top>window.innerHeight*0.35)box.scrollIntoView({behavior:'smooth',block:'start'});}
+q.addEventListener('focus',function(){if(window.innerWidth<760)setTimeout(subir,300);});
+document.querySelector('.cvb-chips').addEventListener('click',function(){setTimeout(subir,50);});
 [].forEach.call(document.querySelectorAll('.cvb-chips button'),function(b){b.addEventListener('click',function(){q.value=b.textContent;go();q.focus();});});
 function open(c){if(!dlg||!dlg.showModal){var d=c.querySelector('.cv-det');d.hidden=!d.hidden;return;}
  document.getElementById('cvd-num').textContent=c.querySelector('.cv-num').textContent;
