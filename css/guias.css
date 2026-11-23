@@ -371,3 +371,31 @@ dialog.montos-pop{max-width:720px}
 /* contraste: cuadros y preguntas siempre oscuros sobre claro */
 .clave,.clave p{color:var(--navy)}
 .faq details p{color:#2A2D40}
+
+/* Contraste y celular (revisión 23/11): textos que no llegaban al mínimo de lectura */
+.fg-lado .eyebrow{color:#DCE1F2}
+.t-emp .cv-tag,.cv-ok .si{color:#17703D}
+.cv-ok .no{color:#5A5D70}
+.cv-con{color:#0F7A40}
+.cv-falta .cv-num{color:#DCE1F2}
+.lc form .legal a{color:var(--texto-suave)}
+/* Cuadros: en el celular entran en el ancho de la pantalla, sin desplazar de costado */
+@media (max-width:600px){
+  .tabla table{min-width:0;font-size:14px}
+  .tabla th,.tabla td{padding:9px 8px;overflow-wrap:break-word;hyphens:auto}
+  .tabla td a,.tabla td span{white-space:normal!important}
+  .tabla td a{white-space:normal}
+  .tabla.sin-col3 th:nth-child(3),.tabla.sin-col3 td:nth-child(3){display:none}
+  .tabla tbody th{width:auto}
+}
+/* Secciones secundarias plegadas: el texto queda en la página para Google y las IA */
+details.mas{margin:30px 0;border:1px solid var(--linea);border-radius:14px;background:#fff;padding:0 20px}
+details.mas>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 0}
+details.mas>summary::-webkit-details-marker{display:none}
+details.mas>summary h2{margin:0!important;font-size:clamp(19px,2.2vw,24px)}
+.mas-ver{flex:none;font-family:var(--f-titulo);font-weight:700;font-size:13px;color:#fff;background:var(--azul);border-radius:999px;padding:6px 12px;white-space:nowrap}
+.mas-ver::after{content:" +"}
+details.mas[open] .mas-ver{font-size:0;padding:6px 12px}
+details.mas[open] .mas-ver::after{content:"Ver menos −";font-size:13px}
+details.mas[open]{padding-bottom:8px}
+details.mas>summary:hover h2{color:var(--azul)}
