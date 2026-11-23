@@ -350,3 +350,24 @@ dialog.montos-pop{max-width:720px}
 .guia .cvb .cv p,.guia .cvb .cv ul{margin:0}
 .guia .cvb .cv-ok{margin-top:4px}
 .cvb-grid[hidden]{display:none}
+/* OBLIGACIONES POR MUERTE O INCAPACIDAD (lista) */
+.guia ol.oblig{list-style:none;padding:0;margin:20px 0;display:grid;gap:12px;counter-reset:ob}
+.oblig li{position:relative;background:#fff;border:1px solid var(--linea);border-left:6px solid var(--c);border-radius:14px;padding:16px 18px 16px 20px;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:20px;row-gap:4px;align-items:start}
+.oblig .ob-paga{--c:#D2462F}.oblig .ob-seguro{--c:#2B4798}.oblig .ob-conv{--c:#94A5D4}
+.oblig p{margin:0}
+.ob-cab{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 12px}
+.ob-caso{font-family:var(--f-titulo);font-weight:800;font-size:19px;line-height:1.2;color:var(--navy)}
+.ob-tag{font-family:var(--f-titulo);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;color:#fff;background:var(--c)}
+.ob-conv .ob-tag{color:var(--navy)}
+.ob-monto{grid-column:1/-1;font-family:var(--f-titulo);font-weight:800;font-size:28px;line-height:1.15;color:var(--c);margin-top:4px!important}
+.ob-conv .ob-monto{color:var(--azul);font-size:22px}
+.ob-monto small{font-family:var(--f-cuerpo);font-weight:600;font-size:15px;color:var(--navy)}
+.ob-txt{grid-column:1/-1;font-size:15.5px;line-height:1.55;color:var(--navy)}
+.ob-ley{grid-column:1/-1;font-size:14px;color:var(--texto-suave)}
+.ob-ley a{color:var(--azul);font-weight:600}
+.ob-seg{grid-column:1/-1;font-size:14.5px;background:#FDF0EC;color:#7A2414;border-radius:8px;padding:8px 12px;margin-top:6px!important}
+.ob-alerta{background:#FFF6E0;border-color:#F2C46B;color:var(--navy)}
+@media (max-width:560px){.ob-monto{font-size:24px}.ob-caso{font-size:17px}}
+/* contraste: cuadros y preguntas siempre oscuros sobre claro */
+.clave,.clave p{color:var(--navy)}
+.faq details p{color:#2A2D40}

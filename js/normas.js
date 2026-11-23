@@ -29,6 +29,11 @@
       r: 'El empleador debe hacer observar las pautas y limitaciones a la duración del trabajo y las normas de higiene y seguridad, y responde por los daños que sufra el trabajador por no cumplirlas. Rige para el consorcio como empleador del encargado y demás personal.',
       u: 'https://www.argentina.gob.ar/normativa/nacional/ley-20744-25552/actualizacion'
     },
+    'lct-212': {
+      t: 'Ley de Contrato de Trabajo 20.744, art. 212 (incapacidad)',
+      r: 'Si por una enfermedad o un accidente el trabajador queda con incapacidad absoluta para trabajar, el empleador debe pagarle una indemnización igual a la del art. 245: un sueldo por año trabajado. Si la incapacidad es parcial y la empresa no tiene tareas que pueda hacer, paga la mitad. Es independiente de lo que pague la ART o un seguro.',
+      u: 'https://www.argentina.gob.ar/normativa/nacional/ley-20744-25552/actualizacion'
+    },
     'lct-248': {
       t: 'Ley de Contrato de Trabajo 20.744, art. 248 (texto según Ley 27.802)',
       r: 'Si el trabajador fallece, el empleador debe pagar a sus causahabientes una indemnización. Es independiente de lo que paguen la ART, el seguro de vida obligatorio u otros beneficios. Por eso muchos empleadores contratan un seguro de vida colectivo que cubra esa indemnización.',
