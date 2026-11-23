@@ -15,10 +15,21 @@
 /responsabilidad-civil     /seguro-de-responsabilidad-civil/          301
 /privacidad.html           /privacidad/                               301
 
+# 404 informados por Search Console (último rastreo oct-2026), revisados el 23/11/2026
+/es-ar/accidentes-personales-prestacional /seguro-de-accidentes-personales/ 301
+/accidentes-personales-prestacional /seguro-de-accidentes-personales/    301
+/es-ar/accidentes-personales-category /seguro-de-accidentes-personales/  301
+/accidentes-personales-category /seguro-de-accidentes-personales/        301
+/es-ar/seguros-automotor   /guias/seguro-de-auto/                     301
+/seguros-automotor         /guias/seguro-de-auto/                     301
+/seguros-para-motos        /guias/seguro-de-moto/                     301
+/es-ar/caucion-category    /seguro-de-caucion/                        301
+/caucion-category          /seguro-de-caucion/                        301
+
 # Direcciones viejas que Google seguía visitando (Search Console, 404 y "rastreada sin indexar" al 17/11/2026)
 # Van antes de /es-ar/* porque gana la primera regla que coincide.
 /es-ar/caucion             /seguro-de-caucion/                        301
-/es-ar/seguros-para-motos  /#seguros                                  301
+/es-ar/seguros-para-motos  /guias/seguro-de-moto/                                  301
 /es-ar/seguro-sepelio      /#seguros                                  301
 /seguro-del-automotor      /guias/seguro-de-auto/                     301
 /seguro-responsabilidad-civil /seguro-de-responsabilidad-civil/      301
