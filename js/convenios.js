@@ -1,22 +1,24 @@
-// Buscador de convenios colectivos (relevamiento Grupo AC, 20/11/2026)
+// Buscador de convenios colectivos (Grupo AC). Las fichas están en el HTML; esto solo filtra y abre el detalle.
 (function(){
-const D=[{"n": "Ley 16.600", "a": "Trabajadores rurales permanentes", "s": "UATRE", "t": "L", "ok": true, "m": "5,5 SMVM (Res. E 224/2017) = $2.071.300 desde 1/3/2026", "q": "Empleador, aseguradora autorizada por la SSN"}, {"n": "CCT 130/75", "a": "Empleados de comercio", "s": "FAECYS", "t": "A", "ok": true, "m": "12 sueldos iniciales Administrativo A (≈ $14.960.000 con básico nov-2026 $1.246.664). Se actualiza cada 6 meses", "q": "Empleador, cualquier aseguradora autorizada"}, {"n": "CCT 412/05", "a": "Papeleros (papel y celulosa)", "s": "FOEIPCyQ", "t": "A", "ok": true, "m": "Vida: 6 sueldos básicos (trabajador) y 3 (cónyuge). Sepelio: 2 meses de remuneración", "q": "Empleador"}, {"n": "CCT 355/03, 376/04, 384/04", "a": "Papeleros (abrasivos, envases-cartón, recorteros)", "s": "FOEIPCyQ", "t": "A", "ok": true, "m": "12 y 6 sueldos básicos", "q": "Empleador"}, {"n": "CCT 377/04, 404/05", "a": "Papeleros (corrugados, depósitos)", "s": "FOEIPCyQ", "t": "A", "ok": true, "m": "6 y 3 sueldos básicos", "q": "Empleador"}, {"n": "CCT 322/00", "a": "Estaciones de servicio (rama según masterforum)", "s": "SOESGyPE", "t": "A", "ok": false, "m": "", "q": ""}, {"n": "CCT 91/75", "a": "Lavaderos de autos", "s": "SOESGyPE", "t": "A", "ok": false, "m": "", "q": ""}, {"n": "CCT 57/89 y 122/90", "a": "Publicidad (agencias y vía pública)", "s": "SUP", "t": "A", "ok": false, "m": "", "q": ""}, {"n": "CCT 107/90", "a": "Investigación de mercado", "s": "SUP", "t": "A", "ok": false, "m": "", "q": ""}, {"n": "CCT 214/75 y 215/75", "a": "Locutores de radio y TV", "s": "SAL", "t": "A", "ok": false, "m": "", "q": ""}, {"n": "CCT 8/75", "a": "Vitivinícolas", "s": "FOEVA", "t": "A", "ok": false, "m": "", "q": ""}, {"n": "CCT 275/96", "a": "Gráficos (interior, sin CABA, GBA ni Córdoba)", "s": "FATIDA", "t": "A", "ok": false, "m": "", "q": ""}, {"n": "CCT 160/75", "a": "Entidades deportivas y civiles", "s": "UTEDYC", "t": "A", "ok": false, "m": "", "q": ""}, {"n": "CCT 76/75", "a": "Construcción", "s": "UOCRA", "t": "B", "ok": true, "m": "200 horas de trabajo", "q": "Empleador de su bolsillo"}, {"n": "CCT 77/89", "a": "Química y petroquímica", "s": "FATIQyP", "t": "B", "ok": false, "m": "", "q": ""}, {"n": "CCT 89/99", "a": "Alimentación (rama)", "s": "FTIA", "t": "B", "ok": false, "m": "", "q": ""}, {"n": "CCT 403/05", "a": "Avícolas", "s": "FTIA", "t": "B", "ok": false, "m": "", "q": ""}, {"n": "CCT 20/88", "a": "Mecánicos del transporte", "s": "SMATA", "t": "B", "ok": false, "m": "", "q": ""}, {"n": "CCT 379/04", "a": "Concesionarias de autos", "s": "SMATA", "t": "B", "ok": true, "m": "25% del básico (cónyuge, hijos, padres); 15% (suegros, hermanos)", "q": "Empleador"}, {"n": "CCT 5/88", "a": "Aceiteros", "s": "FTCIODyARA", "t": "B", "ok": false, "m": "", "q": ""}, {"n": "CCT 408/95", "a": "Vidrio (empleados)", "s": "SEIV", "t": "B", "ok": false, "m": "", "q": ""}, {"n": "CCT 108/75", "a": "Sanidad (clínicas)", "s": "FATSA", "t": "B", "ok": true, "m": "1 sueldo básico de 5ª categoría", "q": "Empleador"}, {"n": "CCT 204/93, 433/05, 303/98", "a": "Vestido e indumentaria", "s": "SOIVA / UOCI / SETIA", "t": "B", "ok": false, "m": "", "q": ""}, {"n": "CCT 124/75", "a": "Prensa", "s": "UTPBA / FATPREN", "t": "B", "ok": false, "m": "", "q": ""}, {"n": "CCT 260/75", "a": "Metalúrgicos", "s": "UOM", "t": "C", "ok": true, "m": "", "q": "La UOM contrata y elige la aseguradora"}, {"n": "CCT 589/10", "a": "Encargados de edificio", "s": "SUTERH / FATERYH", "t": "C", "ok": true, "m": "", "q": "Seguro del convenio (sindicato)"}, {"n": "CCT 389/04", "a": "Gastronómicos", "s": "UTHGRA", "t": "C", "ok": false, "m": "", "q": ""}, {"n": "CCT 40/89", "a": "Camioneros", "s": "Camioneros", "t": "C", "ok": false, "m": "", "q": ""}, {"n": "CCT 244/94", "a": "Alimentación", "s": "FTIA", "t": "S", "ok": true, "m": "", "q": ""}, {"n": "CCT 281/96", "a": "Maestranza", "s": "SOMRA", "t": "S", "ok": true, "m": "", "q": ""}, {"n": "CCT 264/95", "a": "Empleados de seguros", "s": "Sindicato del Seguro", "t": "S", "ok": true, "m": "", "q": ""}, {"n": "CCT 103/75", "a": "Sanidad (hospitales particulares)", "s": "FATSA", "t": "S", "ok": true, "m": "", "q": ""}, {"n": "CCT 507/07", "a": "Seguridad privada", "s": "UPSRA", "t": "P", "ok": false, "m": "", "q": ""}, {"n": "CCT 460/73", "a": "Colectivos", "s": "UTA", "t": "P", "ok": false, "m": "", "q": ""}, {"n": "CCT 419/05", "a": "Plásticos", "s": "UOYEP", "t": "P", "ok": false, "m": "", "q": ""}, {"n": "CCT 18/75", "a": "Bancarios", "s": "La Bancaria", "t": "P", "ok": false, "m": "", "q": ""}, {"n": "CCT 500/07", "a": "Textiles", "s": "AOT", "t": "P", "ok": false, "m": "", "q": ""}, {"n": "CCT 56/75", "a": "Carne", "s": "FESITCARA", "t": "P", "ok": false, "m": "", "q": ""}];
-const T={L:'Por ley para esta actividad',A:'El empleador tiene que contratar un seguro',B:'La empresa paga un beneficio de su bolsillo (se puede asegurar)',C:'Lo administra el sindicato',S:'No encontramos un seguro propio del convenio',P:'En revisión'};
-const box=document.getElementById('conv-q'),res=document.getElementById('conv-res'),cnt=document.getElementById('conv-cnt');
-if(!box)return;
-const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-function card(c){
- const el=document.createElement('article');el.className='conv-card conv-'+c.t;
- const h=document.createElement('h3');h.textContent=c.a;el.appendChild(h);
- const p=document.createElement('p');p.className='conv-num';p.textContent=c.n+(c.s?' · '+c.s:'');el.appendChild(p);
- const e=document.createElement('p');e.className='conv-tipo';e.textContent=c.ok?T[c.t]:'Estamos verificando qué exige este convenio';el.appendChild(e);
- if(c.ok&&c.m){const m=document.createElement('p');m.innerHTML='<strong>Monto:</strong> ';m.appendChild(document.createTextNode(c.m));el.appendChild(m);}
- if(c.ok&&c.q){const q=document.createElement('p');q.innerHTML='<strong>Quién lo contrata o paga:</strong> ';q.appendChild(document.createTextNode(c.q));el.appendChild(q);}
- if(!c.ok){const q=document.createElement('p');q.textContent='Consultanos y te confirmamos qué seguros corresponden.';el.appendChild(q);}
- return el;}
-function go(){const q=norm(box.value).replace(/^cct\s*/,'').trim();res.textContent='';
- const L=D.filter(c=>!q||norm(c.a+' '+c.n+' '+c.s).includes(q));
- L.forEach(c=>res.appendChild(card(c)));
- cnt.textContent=L.length?(L.length+(L.length===1?' convenio':' convenios')):'No encontramos ese convenio. Escribinos y lo revisamos.';}
-box.addEventListener('input',go);go();
+var q=document.getElementById('cvb-q'),grid=document.getElementById('cvb-grid'),cnt=document.getElementById('cvb-cnt'),dlg=document.getElementById('cvd');
+if(!q||!grid)return;
+var cards=[].slice.call(document.querySelectorAll('.cvb .cv:not(.cv-falta)')),mas=document.getElementById('cvb-mas'),falta=document.getElementById('cvb-falta');
+var norm=function(s){return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/^\s*(cct|convenio)\s*/,'').trim();};
+var t;
+function go(){var v=norm(q.value),n=0;var words=v.split(/\s+/).filter(Boolean);
+ cards.forEach(function(c){var k=norm(c.getAttribute('data-k'));var ok=!words.length||words.every(function(w){return k.indexOf(w)>-1;});c.hidden=!ok;if(ok)n++;});
+ if(mas)mas.hidden=!mas.querySelector('.cv:not([hidden])');
+ cnt.textContent=!v?'':(n?n+(n===1?' convenio encontrado':' convenios encontrados'):'Todavía no publicamos ese convenio. Preguntanos y te decimos qué te exige.');
+ clearTimeout(t);if(v&&window.gtag)t=setTimeout(function(){gtag('event','buscar_convenio',{termino:v,resultados:n});},1200);}
+q.addEventListener('input',go);
+[].forEach.call(document.querySelectorAll('.cvb-chips button'),function(b){b.addEventListener('click',function(){q.value=b.textContent;go();q.focus();});});
+function open(c){if(!dlg||!dlg.showModal){var d=c.querySelector('.cv-det');d.hidden=!d.hidden;return;}
+ document.getElementById('cvd-num').textContent=c.querySelector('.cv-num').textContent;
+ document.getElementById('cvd-tit').textContent=c.querySelector('h3').textContent;
+ document.getElementById('cvd-body').innerHTML=c.querySelector('.cv-det').innerHTML;
+ dlg.showModal();if(window.gtag)gtag('event','ver_convenio',{convenio:c.id});}
+grid.addEventListener('click',function(e){var b=e.target.closest('button.cv-ver');if(b)open(b.closest('.cv'));});
+if(dlg){dlg.querySelector('.cvd-x').addEventListener('click',function(){dlg.close();});
+ dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close();});}
+var h=location.hash.match(/^#cct-(.+)/);if(h){var c=document.getElementById('cct-'+h[1]);if(c)setTimeout(function(){c.scrollIntoView({block:'center'});open(c);},300);}
 })();
