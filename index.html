@@ -20,7 +20,7 @@ location.replace(r.hasOwnProperty(k)?r[k]:'/');})();
 </script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Productores de seguros para personas y pymes | Grupo AC</title>
-<meta name="description" content="Productores asesores de seguros matriculados. Comparamos 12 aseguradoras y armamos tu seguro de auto, hogar, ART o caución a medida. Cotizá por WhatsApp.">
+<meta name="description" content="Productores asesores de seguros matriculados. Comparamos 11 aseguradoras y armamos tu seguro de auto, hogar, ART o caución a medida. Cotizá por WhatsApp.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Grupo AC · Broker de seguros">
 <meta property="og:description" content="40 años de experiencia. La energía de un equipo joven. Cotizá por WhatsApp.">
@@ -296,7 +296,8 @@ form .btn{grid-column:1/-1;justify-content:center}
 .pasos3 h3{font-size:20px;font-weight:700}
 .pasos3 p{color:var(--texto-suave);font-size:15px}
 @media (max-width:860px){.pasos3{grid-template-columns:1fr}}
-.google{display:inline-flex;align-items:center;gap:10px;margin-top:6px;font-family:var(--f-titulo);font-weight:700;font-size:15px;color:var(--azul);text-decoration:none;border:1px solid var(--linea);background:#fff;border-radius:999px;padding:10px 18px;width:max-content}
+.hero-google{display:inline-flex;align-items:center;gap:10px;margin-top:18px;color:#DCE2F5;text-decoration:none;font-size:15px}.hero-google b{color:var(--hueso)}.hero-google:hover span:last-child{text-decoration:underline}.estrellas{color:#FBBC05;letter-spacing:1px}
+.google{display:inline-flex;align-items:center;gap:10px;margin-top:6px;font-family:var(--f-titulo);font-weight:700;font-size:15px;color:var(--azul);text-decoration:none;border:1px solid var(--linea);background:#fff;border-radius:999px;padding:10px 18px;justify-self:start;max-width:100%;flex-wrap:wrap}
 .google:hover{border-color:var(--azul)}
 .google svg{width:20px;height:20px}
 .tabs{display:none}
@@ -311,6 +312,14 @@ form .btn{grid-column:1/-1;justify-content:center}
 .form-nota{grid-column:1/-1;font-size:14px;color:var(--texto-suave);margin-top:-6px}
 .form-legal{grid-column:1/-1;font-size:12px;color:var(--texto-suave);text-align:center}
 .form-legal a{color:var(--azul)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.campo.error input{border-color:#C0392B}
+form[hidden],.form-ok[hidden]{display:none}
+.form-ok{background:var(--hueso);color:var(--navy);padding:32px;border-radius:6px;display:grid;gap:14px;align-content:start;align-self:start}
+.form-ok h3{font-size:22px;font-weight:800}
+.form-ok .btn{justify-content:center;border-radius:999px}
+.form-ok .si-wa{display:none}.form-ok.por-wa .si-wa{display:block}.form-ok.por-wa .si-mail{display:none}
+button.enviando{opacity:.7;pointer-events:none}
 form .btn-wa{grid-column:1/-1;justify-content:center;border-radius:999px}
 .legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .legal a{color:#B9BBC8}
@@ -426,11 +435,12 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
     <div>
       <p class="eyebrow">Productores asesores de seguros · Broker</p>
       <h1 class="eslogan"><span class="uno">Seguros a tu medida</span><em>para personas y pymes.</em></h1>
-      <p class="lead">Comparamos 12 aseguradoras y te asesoramos por WhatsApp, en todo el país. Cotizás, consultás y resolvés tus siniestros con un asesor que conoce tu caso.</p>
+      <p class="lead">Comparamos 11 aseguradoras y te asesoramos por WhatsApp, en todo el país. Cotizás, consultás y resolvés tus siniestros con un asesor que conoce tu caso.</p>
       <div class="ctas">
         <a class="btn btn-wa btn-lg" href="https://api.whatsapp.com/send?phone=5491157694024&amp;text=Hola%2C%20vengo%20de%20la%20web%20y%20quiero%20asesoramiento.%20Mi%20nombre%20es%3A%20" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>Escribinos por WhatsApp</span></a>
         <a class="btn btn-ghost btn-lg" href="#seguros">Ver coberturas</a>
       </div>
+      <a class="hero-google" href="https://www.google.com/maps?cid=16086264078601515669" target="_blank" rel="noopener"><span class="estrellas" aria-hidden="true">★★★★★</span><span><b>5,0 en Google</b> · más de 85 opiniones de clientes</span></a>
       <div class="stats"><div><strong>Desde 1985</strong><span>productor matriculado</span></div><div><strong>Desde 2015</strong><span>como Grupo AC SA</span></div><div><strong>11</strong><span>aseguradoras</span></div><div><strong>24 h</strong><span>de respuesta</span></div></div>
     </div>
     <div class="escena" aria-hidden="true">
@@ -453,7 +463,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
   <div class="wrap">
     <div class="aseguradoras">
       <span class="eyebrow">Trabajamos con</span>
-      <div class="cinta"><span class="logo">Federación Patronal Seguros</span><span class="logo">Federación Patronal Retiro</span><span class="logo">ACG</span><span class="logo">SMG Seguros</span><span class="logo">Mercantil Andina</span><span class="logo">BBVA Seguros</span><span class="logo">Integrity Seguros</span><span class="logo">Sancor Seguros</span><span class="logo">Prevención ART</span><span class="logo">Andina ART</span><span class="logo">Berkley International</span><span class="logo">Berkley ART</span><span aria-hidden="true" style="display:contents"><span class="logo">Federación Patronal Seguros</span><span class="logo">Federación Patronal Retiro</span><span class="logo">ACG</span><span class="logo">SMG Seguros</span><span class="logo">Mercantil Andina</span><span class="logo">BBVA Seguros</span><span class="logo">Integrity Seguros</span><span class="logo">Sancor Seguros</span><span class="logo">Prevención ART</span><span class="logo">Andina ART</span><span class="logo">Berkley International</span><span class="logo">Berkley ART</span></span></div>
+      <div class="cinta"><span class="logo">Federación Patronal Seguros</span><span class="logo">Federación Patronal Retiro</span><span class="logo">ACG</span><span class="logo">SMG Seguros</span><span class="logo">Mercantil Andina</span><span class="logo">BBVA Seguros</span><span class="logo">Integrity Seguros</span><span class="logo">Sancor Seguros</span><span class="logo">Prevención ART</span><span class="logo">Andina ART</span><span class="logo">Afianzadora</span><span aria-hidden="true" style="display:contents"><span class="logo">Federación Patronal Seguros</span><span class="logo">Federación Patronal Retiro</span><span class="logo">ACG</span><span class="logo">SMG Seguros</span><span class="logo">Mercantil Andina</span><span class="logo">BBVA Seguros</span><span class="logo">Integrity Seguros</span><span class="logo">Sancor Seguros</span><span class="logo">Prevención ART</span><span class="logo">Andina ART</span><span class="logo">Afianzadora</span></span></div>
     </div>
   </div>
 </div>
@@ -599,7 +609,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
         <tbody>
           <tr><th scope="row">Quién te asesora</th><td data-l="Con Grupo AC">Un productor asesor matriculado en la SSN</td><td data-l="En el banco">Un empleado que vende cuentas, tarjetas y préstamos</td></tr>
           <tr><th scope="row">Tu seguro</th><td data-l="Con Grupo AC">A tu medida, según lo que necesitás proteger</td><td data-l="En el banco">Enlatado, igual para todos</td></tr>
-          <tr><th scope="row">Opciones</th><td data-l="Con Grupo AC">12 aseguradoras comparadas</td><td data-l="En el banco">La compañía con la que el banco tiene acuerdo</td></tr>
+          <tr><th scope="row">Opciones</th><td data-l="Con Grupo AC">11 aseguradoras comparadas</td><td data-l="En el banco">La compañía con la que el banco tiene acuerdo</td></tr>
           <tr><th scope="row">Por qué te lo ofrecen</th><td data-l="Con Grupo AC">Para que estés bien cubierto</td><td data-l="En el banco">Muchas veces, atado a un préstamo, una tarjeta o un beneficio</td></tr>
           <tr><th scope="row">En un siniestro</th><td data-l="Con Grupo AC">Te representamos y hacemos el seguimiento</td><td data-l="En el banco">Un call center, y lo gestionás por tu cuenta</td></tr>
           <tr><th scope="row">Si cambiás de banco</th><td data-l="Con Grupo AC">Tu seguro sigue con vos</td><td data-l="En el banco">Muchas veces tenés que empezar de nuevo</td></tr>
@@ -625,7 +635,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
     <div class="head">
       <span class="eyebrow">Opiniones</span>
       <h2>Lo que dicen nuestros clientes</h2>
-      <a class="google" href="https://www.google.com/maps/search/?api=1&query=Grupo+AC+Broker+de+Seguros+Ituzaing%C3%B3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.6z"/><path fill="#34A853" d="M12 22.5c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.7A10.5 10.5 0 0 0 12 22.5z"/><path fill="#FBBC05" d="M6.2 14.1a6.3 6.3 0 0 1 0-4V7.4H2.7a10.5 10.5 0 0 0 0 9.4z"/><path fill="#EA4335" d="M12 5.7c1.5 0 2.9.5 4 1.6l3-3A10.5 10.5 0 0 0 2.7 7.4l3.5 2.7C7 7.5 9.3 5.7 12 5.7z"/></svg><span>Ver todas las reseñas en Google</span></a>
+      <a class="google" href="https://www.google.com/maps?cid=16086264078601515669" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.6z"/><path fill="#34A853" d="M12 22.5c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.7A10.5 10.5 0 0 0 12 22.5z"/><path fill="#FBBC05" d="M6.2 14.1a6.3 6.3 0 0 1 0-4V7.4H2.7a10.5 10.5 0 0 0 0 9.4z"/><path fill="#EA4335" d="M12 5.7c1.5 0 2.9.5 4 1.6l3-3A10.5 10.5 0 0 0 2.7 7.4l3.5 2.7C7 7.5 9.3 5.7 12 5.7z"/></svg><span><span class="estrellas" aria-hidden="true">★★★★★</span> 5,0 · Más de 85 opiniones en Google</span></a>
     </div>
     <div class="testis">
       <figure class="testi" style="margin:0">
@@ -663,7 +673,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
     </div>
   </div>
 </section>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "InsuranceAgency", "@id": "#grupo-ac", "name": "Grupo AC SA", "legalName": "Grupo de Asesores en Cobertura SA", "foundingDate": "2015", "identifier": {"@type": "PropertyValue", "propertyID": "Matrícula SSN", "value": "1324"}, "taxID": "30-71512229-0", "email": "info@grupoac.com.ar", "telephone": "+54 9 11 5769-4024", "sameAs": ["https://www.instagram.com/grupo_ac_sa/", "https://www.google.com/maps/search/?api=1&query=Grupo+AC+Broker+de+Seguros+Ituzaing%C3%B3"], "address": {"@type": "PostalAddress", "streetAddress": "Av. Félix de Olazábal 631, 4° piso, Depto. F, Edificio Sentire", "addressLocality": "Ituzaingó", "postalCode": "1714", "addressRegion": "Buenos Aires", "addressCountry": "AR"}, "areaServed": {"@type": "Country", "name": "Argentina"}, "founder": {"@id": "#alejandro-carra"}, "employee": {"@id": "#alejandro-carra"}, "url": "https://grupoac.com.ar/", "logo": "https://grupoac.com.ar/img/grupo-ac-wordmark-fondo-claro.svg", "image": "https://grupoac.com.ar/img/og-grupo-ac.jpg", "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Seguros para personas y pymes", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de auto", "audience": {"@type": "Audience", "audienceType": "Personas"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de moto", "audience": {"@type": "Audience", "audienceType": "Personas"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de hogar", "audience": {"@type": "Audience", "audienceType": "Personas"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de vida", "audience": {"@type": "Audience", "audienceType": "Personas"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de accidentes personales", "audience": {"@type": "Audience", "audienceType": "Personas"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ART (aseguradora de riesgos del trabajo)", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro integral de comercio", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de flotas", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de responsabilidad civil", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de caución", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro técnico", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}]}}, {"@type": "Person", "@id": "#alejandro-carra", "name": "Alejandro Carrá", "honorificPrefix": "Lic.", "jobTitle": "Presidente de Grupo AC SA", "sameAs": ["https://www.linkedin.com/in/alejandro-carra/"], "worksFor": {"@id": "#grupo-ac"}, "description": "Productor asesor de seguros desde 1985.", "knowsAbout": "Seguros", "identifier": {"@type": "PropertyValue", "propertyID": "Matrícula SSN", "value": "29641"}, "hasCredential": {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Licenciatura en Administración de Empresas"}, "image": "https://grupoac.com.ar/img/alejandro-carra-productor-asesor-de-seguros.jpg"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "InsuranceAgency", "@id": "#grupo-ac", "name": "Grupo AC SA", "legalName": "Grupo de Asesores en Coberturas SA", "foundingDate": "2015", "identifier": {"@type": "PropertyValue", "propertyID": "Matrícula SSN", "value": "1324"}, "taxID": "30-71512229-0", "email": "info@grupoac.com.ar", "telephone": "+54 9 11 5769-4024", "sameAs": ["https://www.instagram.com/grupo_ac_sa/", "https://www.google.com/maps?cid=16086264078601515669"], "address": {"@type": "PostalAddress", "streetAddress": "Av. Félix de Olazábal 631, 4° piso, Depto. F, Edificio Sentire", "addressLocality": "Ituzaingó", "postalCode": "1714", "addressRegion": "Buenos Aires", "addressCountry": "AR"}, "areaServed": {"@type": "Country", "name": "Argentina"}, "founder": {"@id": "#alejandro-carra"}, "employee": {"@id": "#alejandro-carra"}, "url": "https://grupoac.com.ar/", "logo": "https://grupoac.com.ar/img/grupo-ac-wordmark-fondo-claro.svg", "image": "https://grupoac.com.ar/img/og-grupo-ac.jpg", "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Seguros para personas y pymes", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de auto", "audience": {"@type": "Audience", "audienceType": "Personas"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de moto", "audience": {"@type": "Audience", "audienceType": "Personas"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de hogar", "audience": {"@type": "Audience", "audienceType": "Personas"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de vida", "audience": {"@type": "Audience", "audienceType": "Personas"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de accidentes personales", "audience": {"@type": "Audience", "audienceType": "Personas"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ART (aseguradora de riesgos del trabajo)", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro integral de comercio", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de flotas", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de responsabilidad civil", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro de caución", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seguro técnico", "audience": {"@type": "Audience", "audienceType": "Pymes"}, "areaServed": {"@type": "Country", "name": "Argentina"}}}]}}, {"@type": "Person", "@id": "#alejandro-carra", "name": "Alejandro Carrá", "honorificPrefix": "Lic.", "jobTitle": "Presidente de Grupo AC SA", "sameAs": ["https://www.linkedin.com/in/alejandro-carra/"], "worksFor": {"@id": "#grupo-ac"}, "description": "Productor asesor de seguros desde 1985.", "knowsAbout": "Seguros", "identifier": {"@type": "PropertyValue", "propertyID": "Matrícula SSN", "value": "29641"}, "hasCredential": {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Licenciatura en Administración de Empresas"}, "image": "https://grupoac.com.ar/img/alejandro-carra-productor-asesor-de-seguros.jpg"}]}</script>
 
 
 <section class="block" id="preguntas">
@@ -698,14 +708,23 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
     </div>
     <form id="cotizar" novalidate>
       <h3>Quiero cotizar</h3>
-      <p class="form-nota">Completá estos datos y te abrimos WhatsApp con la consulta lista para enviar.</p>
-      <div class="campo full"><label for="nombre">Nombre y apellido</label><input id="nombre" name="nombre" required autocomplete="name"></div>
+      <p class="form-nota">Dejanos tus datos y un asesor te contacta dentro de las 24 h hábiles.</p>
+      <div class="campo"><label for="nombre">Nombre y apellido</label><input id="nombre" name="nombre" required autocomplete="name"></div>
+      <div class="campo"><label for="telefono">Celular (WhatsApp)</label><input id="telefono" name="telefono" type="tel" required autocomplete="tel" inputmode="tel" placeholder="Ej.: 11 5555-5555"></div>
+      <div class="campo full"><label for="mail">Mail (opcional)</label><input id="mail" name="mail" type="email" autocomplete="email"></div>
+      <div class="hp" aria-hidden="true"><label for="web">No completar</label><input id="web" name="web" tabindex="-1" autocomplete="off"></div>
       <div class="campo full"><label for="tipo">¿Qué querés asegurar?</label>
-        <select id="tipo" name="tipo"><optgroup label="Personas"><option>Auto</option><option>Moto</option><option>Monopatín o bici eléctrica</option><option>Hogar</option><option>Vida</option><option>Accidentes personales</option></optgroup><optgroup label="Pymes"><option>ART</option><option>Integral de comercio</option><option>Flotas</option><option>Responsabilidad civil</option><option>Cauciones</option><option>Seguro técnico</option></optgroup><option>Otro</option></select></div>
-      <div class="campo full"><label for="msg">Contanos un poco más (opcional)</label><textarea id="msg" name="msg" placeholder="Ej.: Toyota Etios 2019, uso particular, Córdoba"></textarea></div>
-      <button class="btn btn-wa" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>Enviar por WhatsApp</span></button>
+        <select id="tipo" name="riesgo"><optgroup label="Personas"><option>Auto</option><option>Moto</option><option>Monopatín o bici eléctrica</option><option>Hogar</option><option>Vida</option><option>Accidentes personales</option></optgroup><optgroup label="Pymes"><option>ART</option><option>Integral de comercio</option><option>Flotas</option><option>Responsabilidad civil</option><option>Cauciones</option><option>Seguro técnico</option></optgroup><option>Otro</option></select></div>
+      <div class="campo full"><label for="msg">Contanos un poco más (opcional)</label><textarea id="msg" name="comentario" placeholder="Ej.: Toyota Etios 2019, uso particular, Córdoba"></textarea></div>
+      <button class="btn btn-wa" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg><span>Quiero que me contacten</span></button>
       <p class="form-legal">Al enviar aceptás nuestra <a href="/privacidad/">política de privacidad</a>.</p>
     </form>
+    <div class="form-ok" id="cotizar-ok" tabindex="-1" hidden>
+      <h3>¡Gracias! Ya recibimos tu consulta.</h3>
+      <p class="si-mail">Un asesor te va a escribir dentro de las 24 h hábiles. Si es urgente, escribinos ahora por WhatsApp.</p>
+      <p class="si-wa">Último paso: tocá el botón para mandarnos la consulta por WhatsApp. Ya está escrita.</p>
+      <a class="btn btn-wa" id="cotizar-wa" href="https://api.whatsapp.com/send?phone=5491157694024" target="_blank" rel="noopener"><span>Abrir WhatsApp</span></a>
+    </div>
   </div>
 </section>
 
@@ -718,7 +737,7 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
       <img class="isotipo" src="img/isotipo-hueso.webp" alt="Isotipo de Grupo AC" width="56" height="54">
       <div>
         <span class="b">Grupo AC SA</span>
-        <p>Grupo de Asesores en Cobertura SA<br>CUIT 30-71512229-0<br>Sociedad de productores asesores de seguros, matrícula SSN N.º 1324.<br>Presidente: Lic. Alejandro Carrá, matrícula SSN N.º 29641.</p>
+        <p>Grupo de Asesores en Coberturas SA<br>CUIT 30-71512229-0<br>Sociedad de productores asesores de seguros, matrícula SSN N.º 1324.<br>Presidente: Lic. Alejandro Carrá, matrícula SSN N.º 29641.</p>
       </div>
     </div>
     <div class="pie-esp">
@@ -762,18 +781,32 @@ footer{background:var(--navy);color:#B9BBC8;border-top:1px solid rgba(148,165,21
       </div>
     </div>
   </div>
-  <div class="wrap legal"><span>© 2026 Grupo de Asesores en Cobertura SA. Todos los derechos reservados.</span><span><a href="/privacidad/">Política de privacidad</a> · <a href="https://www.argentina.gob.ar/servicio/iniciar-un-reclamo-ante-defensa-del-consumidor" target="_blank" rel="noopener">Defensa de las y los consumidores. Para reclamos ingrese aquí</a></span></div>
+  <div class="wrap legal"><span>© 2026 Grupo de Asesores en Coberturas SA. Todos los derechos reservados.</span><span><a href="/privacidad/">Política de privacidad</a> · <a href="https://www.argentina.gob.ar/servicio/iniciar-un-reclamo-ante-defensa-del-consumidor" target="_blank" rel="noopener">Defensa de las y los consumidores. Para reclamos ingrese aquí</a></span></div>
 </footer>
 
 <script>
-document.getElementById('cotizar').addEventListener('submit',function(e){
-  e.preventDefault();
-  var n=document.getElementById('nombre');
-  if(!n.value.trim()){n.focus();return}
-  var t='Hola, soy '+n.value.trim()+'. Vengo de la web y quiero cotizar: '+document.getElementById('tipo').value+'.';
-  var m=document.getElementById('msg').value.trim(); if(m) t+=' '+m;
-  window.open('https://api.whatsapp.com/send?phone=5491157694024&text='+encodeURIComponent(t),'_blank','noopener');
-});
+(function(){
+  var f=document.getElementById('cotizar'),ok=document.getElementById('cotizar-ok'),wa=document.getElementById('cotizar-wa'),btn=f.querySelector('button[type=submit]');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=document.getElementById('nombre'),t=document.getElementById('telefono'),mal=[];
+    [n,t].forEach(function(i){var bad=!i.value.trim()||(i===t&&i.value.replace(/\D/g,'').length<8);i.closest('.campo').classList.toggle('error',bad);if(bad)mal.push(i)});
+    if(mal.length){mal[0].focus();return}
+    var fd=new FormData(f);
+    fd.append('pagina',location.href.split('#')[0]);fd.append('origen','Inicio (formulario Quiero cotizar)');
+    var txt='Hola, soy '+fd.get('nombre')+'. Vengo de la web y quiero cotizar: '+fd.get('riesgo')+'.\nCelular: '+fd.get('telefono')+(fd.get('mail')?'\nMail: '+fd.get('mail'):'')+(fd.get('comentario')?'\n'+fd.get('comentario'):'');
+    wa.href='https://api.whatsapp.com/send?phone=5491157694024&text='+encodeURIComponent(txt);
+    var listo=function(porWa){f.hidden=true;ok.classList.toggle('por-wa',porWa);ok.hidden=false;ok.focus();
+      if(window.gtag)gtag('event','generate_lead',{form:'inicio',riesgo:fd.get('riesgo'),via:porWa?'whatsapp':'mail'})};
+    btn.classList.add('enviando');
+    fetch('/api/consulta',{method:'POST',body:fd})
+      .then(function(r){return r.json().catch(function(){return {}})})
+      .then(function(j){listo(!(j&&j.ok))})
+      .catch(function(){listo(true)})
+      .finally(function(){btn.classList.remove('enviando')});
+  });
+  f.querySelectorAll('input').forEach(function(i){i.addEventListener('input',function(){var c=i.closest('.campo');if(c)c.classList.remove('error')})});
+})();
 document.querySelectorAll('.tabs button').forEach(function(b){
   b.addEventListener('click',function(){
     document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-selected',x===b)});
