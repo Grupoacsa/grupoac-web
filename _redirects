@@ -36,6 +36,12 @@
 /seguros-profesional-de-la-salud /seguro-de-mala-praxis/             301
 /legislacion-y-normativas  /guias/                                    301
 
+# 404 que Search Console seguía mostrando al 26/11/2026 (faltaban en esta lista)
+/accidentes-personales          /seguro-de-accidentes-personales/   301
+/accidentes-personales-product  /seguro-de-accidentes-personales/   301
+/es-ar/accidentes-personales    /seguro-de-accidentes-personales/   301
+/tpl/*                          /                                   301
+
 # Direcciones viejas que Google seguía visitando (Search Console, 404 al 11/11/2026)
 /es-ar/conocenos           /nosotros/                                 301
 /es-ar/cotiza-ya           /#contacto                                 301
